@@ -7,6 +7,59 @@
   ```
   sudo port install uhd
   ```
+  > Returns:
+  ```powershell
+  --->  Fetching archive for uhd
+--->  Attempting to fetch uhd-3.15.0.0_7+docs+examples+libusb+manpages+manual+python310+python_api+test.darwin_23.arm64.tbz2 from https://packages.macports.org/uhd
+--->  Attempting to fetch uhd-3.15.0.0_7+docs+examples+libusb+manpages+manual+python310+python_api+test.darwin_23.arm64.tbz2 from https://fra.de.packages.macports.org/uhd
+--->  Attempting to fetch uhd-3.15.0.0_7+docs+examples+libusb+manpages+manual+python310+python_api+test.darwin_23.arm64.tbz2 from https://mse.uk.packages.macports.org/uhd
+--->  Fetching distfiles for uhd
+--->  Attempting to fetch uhd-3.15.0.0.tar.gz from https://distfiles.macports.org/uhd
+--->  Verifying checksums for uhd                                                
+--->  Extracting uhd
+--->  Applying patches to uhd
+--->  Configuring uhd
+--->  Building uhd                                       
+--->  Staging uhd into destroot                          
+--->  Installing uhd @3.15.0.0_7+docs+examples+libusb+manpages+manual+python310+python_api+test
+--->  Activating uhd @3.15.0.0_7+docs+examples+libusb+manpages+manual+python310+python_api+test
+--->  Cleaning uhd
+--->  Updating database of binaries
+--->  Scanning binaries for linking errors
+--->  No broken files found.
+--->  No broken ports found.
+--->  Some of the ports you installed have notes:
+  db48 has the following notes:
+    The Java and Tcl bindings are now provided by the db48-java and
+    db48-tcl subports.
+  libpsl has the following notes:
+    libpsl API documentation is provided by the port 'libpsl-docs'.
+  lzma has the following notes:
+    The LZMA SDK program is installed as "lzma_alone", to avoid conflict with
+    LZMA Utils
+  py310-cython has the following notes:
+    To make the Python 3.10 version of Cython the one that is run when you
+    execute the commands without a version suffix, e.g. 'cython', run:
+    
+    port select --set cython cython310
+  py310-docutils has the following notes:
+    To make the Python 3.10 version of docutils the one that is run when you
+    execute the commands without a version suffix, e.g. 'rst2man', run:
+    
+    port select --set docutils py310-docutils
+  python310 has the following notes:
+    To make this the default Python or Python 3 (i.e., the version run by the
+    'python' or 'python3' commands), run one or both of:
+    
+        sudo port select --set python python310
+        sudo port select --set python3 python310
+  python311 has the following notes:
+    To make this the default Python or Python 3 (i.e., the version run by the
+    'python' or 'python3' commands), run one or both of:
+    
+        sudo port select --set python python311
+        sudo port select --set python3 python311
+```
 
   - [ ] [page_usrp_b200.html](https://files.ettus.com/manual/page_usrp_b200.html)
 
