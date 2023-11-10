@@ -8,6 +8,7 @@
   sudo port install uhd
   ```
 
+  - [ ] [page_usrp_b200.html](https://files.ettus.com/manual/page_usrp_b200.html)
 
 ---
 
