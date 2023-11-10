@@ -8,8 +8,8 @@
   sudo port install uhd
   ```
   > Returns:
-  ```powershell
-  --->  Fetching archive for uhd
+```powershell
+--->  Fetching archive for uhd
 --->  Attempting to fetch uhd-3.15.0.0_7+docs+examples+libusb+manpages+manual+python310+python_api+test.darwin_23.arm64.tbz2 from https://packages.macports.org/uhd
 --->  Attempting to fetch uhd-3.15.0.0_7+docs+examples+libusb+manpages+manual+python310+python_api+test.darwin_23.arm64.tbz2 from https://fra.de.packages.macports.org/uhd
 --->  Attempting to fetch uhd-3.15.0.0_7+docs+examples+libusb+manpages+manual+python310+python_api+test.darwin_23.arm64.tbz2 from https://mse.uk.packages.macports.org/uhd
