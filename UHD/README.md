@@ -32,7 +32,7 @@
 
 - Download Ports binary [package](https://github.com/macports/macports-base/releases/download/v2.8.1/MacPorts-2.8.1-14-Sonoma.pkg)
 - Installl the package
-- Update the `.zshrc`  to include PATH linked to `/opt/local/bin` [1](https://superuser.com/questions/287713/sudo-port-command-not-found-after-installing-macports-on-snow-leopard)
+- Update the `.zshrc`  to include PATH linked to `/opt/local/bin` [(1)](https://superuser.com/questions/287713/sudo-port-command-not-found-after-installing-macports-on-snow-leopard)
 
 
 - [ ] [The Core Values of the Xilinx Spartan 6 XC6SLX75 FPGA](https://ebics.net/xilinx-spartan-6-xc6slx75/)
