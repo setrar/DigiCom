@@ -2,7 +2,7 @@
 
 - [ ] [USRP Hardware Driver and USRP Manual](https://files.ettus.com/manual/page_uhd.html)
 
-  - [ ] Install UHD on :apple:
+  - [ ] [Install](https://files.ettus.com/manual/page_install.html) UHD on :apple:
   
   ```
   sudo port install uhd
