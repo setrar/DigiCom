@@ -34,5 +34,10 @@
 - Installl the package
 - Update the `.zshrc`  to include PATH linked to `/opt/local/bin` [(1)](https://superuser.com/questions/287713/sudo-port-command-not-found-after-installing-macports-on-snow-leopard)
 
+- [ ] Install UHD on :apple:
+
+```
+sudo port install uhd
+```
 
 - [ ] [The Core Values of the Xilinx Spartan 6 XC6SLX75 FPGA](https://ebics.net/xilinx-spartan-6-xc6slx75/)
