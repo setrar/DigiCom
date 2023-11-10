@@ -3,9 +3,9 @@
 - [ ] [USRP Hardware Driver and USRP Manual](https://files.ettus.com/manual/page_uhd.html)
 
 
-  - [ ] [page_usrp_b200.html](https://files.ettus.com/manual/page_usrp_b200.html)
+  - [ ] [page_usrp_b200](https://files.ettus.com/manual/page_usrp_b200.html)
   
-  - [ ] Identify device
+  - [ ] [page_identification](https://files.ettus.com/manual/page_identification.html)
 
 ```
 uhd_find_devices
