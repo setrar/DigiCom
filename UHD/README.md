@@ -1,5 +1,9 @@
 # UHD
 
+- [ ] [USRP Hardware Driver and USRP Manual](https://files.ettus.com/manual/page_uhd.html)
+
+---
+
 - [ ] [USRP B200 (Board Only)](https://www.ettus.com/all-products/ub200-kit/)
 - [ ] [USRP B200 - Datasheet](https://www.ettus.com/wp-content/uploads/2019/01/b200-b210_spec_sheet.pdf)
   - 1 TX & 1 RX, Half or Full Duplex [AD9364]
