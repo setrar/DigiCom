@@ -25,4 +25,4 @@
 # References
 
 - [ ] Install [MacPorts](https://www.macports.org) for :apple:
-- [ ] [(What You Need to Know before Working with Xilinx Spartan 6 XC6SLX75’s Logic-Optimized FPGAs)]()
+- [ ] [The Core Values of the Xilinx Spartan 6 XC6SLX75 FPGA](https://ebics.net/xilinx-spartan-6-xc6slx75/)
