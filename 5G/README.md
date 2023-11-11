@@ -18,6 +18,9 @@
 - [Wireless Internet Service Providers](https://en.wikipedia.org/wiki/Wireless_Internet_service_provider) WISPs
 - [What is 5G Fixed Wireless Access (FWA)?](https://www.metaswitch.com/knowledge-center/reference/what-is-5g-fixed-wireless-access-fwa)
 - [5G SA network](https://en.wikipedia.org/wiki/5G_NR#Standalone_mode)
+- [T-Mobile Unveils SASE Solution with Two Industry-First Capabilities](https://www.t-mobile.com/news/business/t-mobile-unveils-sase-solution)
+- [Using OSS tools to create components for SASE (Secure Access Service Edge) in containers](https://github.com/shsingh/opensase)
+- [SD-Wan](https://en.wikipedia.org/wiki/SD-WAN) Software Defined WAN
 
 ## Around CBRS
 
