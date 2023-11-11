@@ -6,6 +6,36 @@
 export UHD_HOME=/opt/local/share/uhd
 ```
 
+Set a custom name
+Run the following commands:
+
+```
+$UHD_HOME/utils/usrp_burn_mb_eeprom --args="serial=30C51C1" --values="name=lab1_xcvr"
+```
+> Returns:
+```yaml
+Creating USRP device from address: serial=30C51C1
+[INFO] [UHD] Mac OS; Clang version 15.0.0 (clang-1500.0.40.1); Boost_107100; UHD_3.15.0.0-MacPorts-Release
+[INFO] [B200] Detected Device: B200mini
+[INFO] [B200] Operating over USB 3.
+[INFO] [B200] Initialize CODEC control...
+[INFO] [B200] Initialize Radio control...
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Setting master clock rate selection to 'automatic'.
+[INFO] [B200] Asking for clock rate 16.000000 MHz... 
+[INFO] [B200] Actually got clock rate 16.000000 MHz.
+
+Fetching current settings from EEPROM...
+    EEPROM ["name"] is "B200mini"
+
+Setting EEPROM ["name"] to "lab1_xcvr"...
+Power-cycle the USRP device for the changes to take effect.
+
+Done
+```
+
+
   - [ ] [page_usrp_b200](https://files.ettus.com/manual/page_usrp_b200.html)
   
   - [ ] [page_identification](https://files.ettus.com/manual/page_identification.html)
