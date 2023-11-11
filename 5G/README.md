@@ -19,4 +19,4 @@ See Helium above
 
 - [ ] 🇨🇦 Canada
 
-- [ ] [CBRS In Canada](https://wifivitae.com/2020/06/29/cbrs-in-canada)
+-  [CBRS In Canada](https://wifivitae.com/2020/06/29/cbrs-in-canada)
