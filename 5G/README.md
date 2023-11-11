@@ -12,6 +12,7 @@
 
 
 - [ ] [The Disappointment of 5G](https://circleid.com/posts/20230127-the-disappointment-of-5g)
+- [ ] [What is 5G Fixed Wireless Access (FWA)?](https://www.metaswitch.com/knowledge-center/reference/what-is-5g-fixed-wireless-access-fwa)
 
 ## Around CBRS
 
