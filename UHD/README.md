@@ -242,7 +242,7 @@ Done!
 
 - [ ] [The Core Values of the Xilinx Spartan 6 XC6SLX75 FPGA](https://ebics.net/xilinx-spartan-6-xc6slx75/)
 
-  - [ ] [Install](https://files.ettus.com/manual/page_install.html) UHD on :apple:
+  - [ ] Install UHD on :apple: using [MacPorts](https://ports.macports.org/port/uhd/)
   
   ```
   sudo port install uhd
