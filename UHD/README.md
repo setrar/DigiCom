@@ -47,7 +47,7 @@ Device Address:
 /opt/local/share/uhd/examples/gpio
 ```
 > Returns:
-<pre>
+```yaml
 Creating the usrp device with: ...
 [INFO] [UHD] Mac OS; Clang version 15.0.0 (clang-1500.0.40.1); Boost_107100; UHD_3.15.0.0-MacPorts-Release
 [INFO] [B200] Detected Device: B200mini
@@ -155,7 +155,7 @@ Testing ATR full duplex output...pass:
 All tests passed!
 
 Done!
-</pre>
+```
 
 ---
 
