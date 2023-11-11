@@ -12,7 +12,11 @@
 
 
 - [ ] [The Disappointment of 5G](https://circleid.com/posts/20230127-the-disappointment-of-5g)
-- [ ] [What is 5G Fixed Wireless Access (FWA)?](https://www.metaswitch.com/knowledge-center/reference/what-is-5g-fixed-wireless-access-fwa)
+
+# Jargons
+
+- [Wireless Internet Service Providers](https://en.wikipedia.org/wiki/Wireless_Internet_service_provider) WISPs
+- [What is 5G Fixed Wireless Access (FWA)?](https://www.metaswitch.com/knowledge-center/reference/what-is-5g-fixed-wireless-access-fwa)
 
 ## Around CBRS
 
@@ -22,4 +26,9 @@ See Helium above
 
 - [ ] 🇨🇦 Canada
 
--  [CBRS In Canada](https://wifivitae.com/2020/06/29/cbrs-in-canada)
+[CBRS In Canada](https://wifivitae.com/2020/06/29/cbrs-in-canada)
+
+- France
+
+[Citizens Broadband Radio Service (CBRS) : un système de partage dynamique dans la bande 3,5 GHz](https://www.anfr.fr/liste-actualites/actualite/citizens-broadband-radio-service-cbrs-un-systeme-de-partage-dynamique-dans-la-bande-35-ghz)
+
