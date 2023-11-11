@@ -2,6 +2,9 @@
 
 - [ ] [USRP Hardware Driver and USRP Manual](https://files.ettus.com/manual/page_uhd.html)
 
+```
+export UHD_HOME=/opt/local/share/uhd
+```
 
   - [ ] [page_usrp_b200](https://files.ettus.com/manual/page_usrp_b200.html)
   
