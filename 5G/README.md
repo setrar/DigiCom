@@ -17,6 +17,7 @@
 
 - [Wireless Internet Service Providers](https://en.wikipedia.org/wiki/Wireless_Internet_service_provider) WISPs
 - [What is 5G Fixed Wireless Access (FWA)?](https://www.metaswitch.com/knowledge-center/reference/what-is-5g-fixed-wireless-access-fwa)
+- [5G SA network](https://en.wikipedia.org/wiki/5G_NR#Standalone_mode)
 
 ## Around CBRS
 
