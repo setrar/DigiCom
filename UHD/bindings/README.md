@@ -27,6 +27,38 @@ Precompiling project...
   4 dependencies successfully precompiled in 8 seconds. 552 already precompiled. 7 skipped during auto due to previous errors.
 ```
 
+```
+julia setup.jl
+```
+> Returns:
+```julia
+[INFO] [UHD] Mac OS; Clang version 12.0.0 (/home/mose/.julia/dev/BinaryBuilderBase/deps/downloads/llvm-project.git d28af7c654d8db0b68c175db5ce212d74fb5e9bc); Boost_107600; UHD_4.1.0.HEAD-0-g6bd0be9c
+[WARNING] [B200] EnvironmentError: IOError: Could not find path for image: usrp_b200_fw.hex
+
+Using images directory: <no images directory located>
+
+Set the environment variable 'UHD_IMAGES_DIR' appropriately or follow the below instructions to download the images package.
+
+Please run:
+
+ "/Users/valiha/.julia/artifacts/3fe605e4baef88b8af8c0fed9cb532390084eb7d/lib/uhd/utils/uhd_images_downloader.py"
+ERROR: LoadError: Unable to create the UHD device. No attached UHD device found.
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:35
+ [2] macro expansion
+   @ ~/.julia/packages/UHDBindings/l94hn/src/Bindings.jl:30 [inlined]
+ [3] openUHD(carrierFreq::Float64, samplingRate::Float64, gain::Float64; args::String, channels::Vector{Int64}, antennas::Dict{Symbol, Vector{String}}, cpu_format::String, otw_format::String, subdev::String, nbAntennaRx::Int64, nbAntennaTx::Int64, bypassStreamer::Bool)
+   @ UHDBindings ~/.julia/packages/UHDBindings/l94hn/src/UHDBindings.jl:141
+ [4] openUHD(carrierFreq::Float64, samplingRate::Float64, gain::Float64)
+   @ UHDBindings ~/.julia/packages/UHDBindings/l94hn/src/UHDBindings.jl:135
+ [5] main()
+   @ Main ~/Developer/DigiCom/UHD/bindings/setup.jl:17
+ [6] top-level scope
+   @ ~/Developer/DigiCom/UHD/bindings/setup.jl:26
+in expression starting at /Users/valiha/Developer/DigiCom/UHD/bindings/setup.jl:26
+```
+
 # References
 
 - [ ] [UHDBindings.jl](https://docs.juliahub.com/UHDBindings) started by [Robin GERZAGUET](https://perso.univ-rennes1.fr/robin.gerzaguet/)
