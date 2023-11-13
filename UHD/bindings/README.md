@@ -59,6 +59,46 @@ Stacktrace:
 in expression starting at /Users/valiha/Developer/DigiCom/UHD/bindings/setup.jl:26
 ```
 
+```
+find /opt/local/share/uhd -name "usrp_b200_fw.hex"
+```
+> /opt/local/share/uhd/images/usrp_b200_fw.hex
+
+```
+export UHD_IMAGES_DIR=/opt/local/share/uhd/images
+```
+
+```
+julia setup.jl
+```
+> Returns:
+```julia
+[INFO] [UHD] Mac OS; Clang version 12.0.0 (/home/mose/.julia/dev/BinaryBuilderBase/deps/downloads/llvm-project.git d28af7c654d8db0b68c175db5ce212d74fb5e9bc); Boost_107600; UHD_4.1.0.HEAD-0-g6bd0be9c
+[INFO] [B200] Loading firmware image: /opt/local/share/uhd/images/usrp_b200_fw.hex...
+[INFO] [B200] Detected Device: B200mini
+[INFO] [B200] Loading FPGA image: /opt/local/share/uhd/images/usrp_b200mini_fpga.bin...
+[INFO] [B200] Operating over USB 3.
+[INFO] [B200] Initialize CODEC control...
+[INFO] [B200] Initialize Radio control...
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Setting master clock rate selection to 'automatic'.
+[INFO] [B200] Asking for clock rate 16.000000 MHz... 
+[INFO] [B200] Actually got clock rate 16.000000 MHz.
+┌Rx Warning: Effective carrier frequency is 867.9999999999992 MHz and not 868.0 MHz
+┌Tx Warning: Effective carrier frequency is 867.9999999999992 MHz and not 868.0 MHz
+┌Rx: Current UHD Configuration in Rx mode
+| Carrier Frequency: 868.000 MHz
+| Sampling Frequency: 16.000 MHz
+└  Rx Gain: 30.00 dB
+┌Tx: Current UHD Configuration in Tx mode
+| Carrier Frequency: 868.000 MHz
+| Sampling Frequency: 16.000 MHz
+└  Tx Gain: 30.00 dB
+
+[ Info: USRP device is now closed.
+```
+
 # References
 
 - [ ] [UHDBindings.jl](https://docs.juliahub.com/UHDBindings) started by [Robin GERZAGUET](https://perso.univ-rennes1.fr/robin.gerzaguet/)
