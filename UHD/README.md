@@ -206,6 +206,8 @@ All tests passed!
 Done!
 ```
 
+<img src=images/IMG_0618.png width='50%' height='50%' > </img>
+
 ---
 
 - [ ] [USRP B200 (Board Only)](https://www.ettus.com/all-products/ub200-kit/)
