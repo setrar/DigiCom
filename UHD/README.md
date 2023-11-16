@@ -93,7 +93,7 @@ Device Address:
 - [ ] GPIO
 
 ```
-/opt/local/share/uhd/examples/gpio
+$UHD_HOME/examples/gpio
 ```
 > Returns:
 ```yaml
