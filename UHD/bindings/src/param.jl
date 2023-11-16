@@ -1,3 +1,5 @@
+using UHDBindings
+
 function main()
 	# ---------------------------------------------------- 
 	# --- Physical layer and RF parameters 
