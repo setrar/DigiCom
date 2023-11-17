@@ -105,3 +105,4 @@ julia setup.jl
 - [ ] [UHDBindings.jl: Julia C bindings for UHD to monitor USRP devices.](https://github.com/JuliaTelecom/UHDBindings.jl)
 - [ ] [JuliaTelecom: Julia packages for Telecommunications](https://github.com/JuliaTelecom)
 - [ ] [DigitalComm.jl: Julia module for digital communication tools.](https://github.com/JuliaTelecom/DigitalComm.jl)
+- [ ] [ettus.com: Getting Started with UHD and C++](https://kb.ettus.com/Getting_Started_with_UHD_and_C%2B%2B)
