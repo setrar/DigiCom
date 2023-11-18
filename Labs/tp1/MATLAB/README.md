@@ -4,16 +4,18 @@ For the most likely PSS index i and Nf with m = 0, plot the peak value of the st
 
 
 ```
-load('rxsignal_withchannelandfreqoff.mat')
-pss
-m2_chan = 10*log10(abs(conv(rxs3,conj(fliplr(pss2_t))))); [c2_chan,NF2_chan] = max(m2_chan); plot(m2_chan); axis ([1 10000 10 60])
-```
-
-```
 % Grab the function Profs Frequency Offset with his values
 > freq_offset_est(rxs3,pss2_t,NF2_chan-length(pss2_t)+1)
 Detected_offset: 150 Hz
 ans = 766
 ```
 
+```matlab
+cd '~/Developer/DigiCom/Labs/tp1/MATLAB'
+load('rxsignal_withchannelandfreqoff.mat')
+run('pss')
+m2_chan = 10*log10(abs(conv(rxs3,conj(fliplr(pss2_t)))))
+[c2_chan,NF2_chan] = max(m2_chan)
+plot(m2_chan); axis ([1 10000 10 60])
+```
 
