@@ -10,7 +10,7 @@
 \\
 \text { -------------------------------------------------------------------------------- }
 \\
-\text{ Notation:} \qquad \qquad x(n) \qquad \qquad \qquad X(k) \qquad \qquad \qquad 
+\text{ Notation:} \qquad x(n) \qquad \qquad \qquad X(k) \qquad \qquad \qquad \qquad 
 
 \end{gather}
 ```
