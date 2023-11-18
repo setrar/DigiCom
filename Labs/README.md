@@ -9,6 +9,7 @@
 \text{ Property } \qquad \text { Time Domain } \qquad \text { Frequency Domain }
 \\
 \text { -------------------------------------------------------------------------------- }
+\\
 \text{ Notation:} \qquad x(n) \qquad X(k)
 
 \end{gather}
