@@ -1,5 +1,14 @@
 # Wifi Connect
 
+
+```
+export UHD_IMAGES_DIR=/opt/local/share/uhd/images
+```
+
+```
+jupyter lab
+```
+
 <img src=images/WIFI-card-status.png width='50%' height='50%' > </img>
 
 # References
