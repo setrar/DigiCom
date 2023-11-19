@@ -1,4 +1,5 @@
 using Plots
+using FFTW
 
 include("./SimplePSD.jl")
 using .SimplePSD
@@ -9,4 +10,5 @@ gain = 30.0
 
 xAx, psd = SimplePSD.computePSD(carrierFreq,samplingRate,gain;args="",N=1024,nbMean=32)
 
-plot(xAx,10*log10.(psd))
+#plot(xAx,10*log10.(psd))
+plot(xAx,10*log10.(abs2.(fftshift(fft(psd)))))
