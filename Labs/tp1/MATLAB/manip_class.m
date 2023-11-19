@@ -1,7 +1,8 @@
 pss00 = xcorr(pss0_t,pss0_t);
 pss01 = xcorr(pss0_t,pss1_t);
 pss02 = xcorr(pss0_t,pss2_t);
-pss01 = xcorr(pss0_t,pss1_t);
+pss11 = xcorr(pss1_t,pss1_t);
+pss12 = xcorr(pss1_t,pss2_t);
 pss22 = xcorr(pss2_t,pss2_t);
 
 
