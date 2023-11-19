@@ -36,3 +36,7 @@ See Helium above
 
 [Citizens Broadband Radio Service (CBRS) : un système de partage dynamique dans la bande 3,5 GHz](https://www.anfr.fr/liste-actualites/actualite/citizens-broadband-radio-service-cbrs-un-systeme-de-partage-dynamique-dans-la-bande-35-ghz)
 
+- Hyperscale
+
+- [ ] [AWS to take on Microsoft Azure in private 5G](https://www.techtarget.com/searchnetworking/news/252510351/AWS-to-take-on-Microsoft-Azure-in-private-5G)
+
