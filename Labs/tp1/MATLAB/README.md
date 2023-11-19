@@ -1,6 +1,10 @@
 
 
-For the most likely PSS index i and Nf with m = 0, plot the peak value of the statistic in 100 Hz steps and a ±7.5kHz window around the carrier frequency (i.e. ∆fmax/∆fmin = 75). What is the most likely frequency-offset? Based on the shape of the statistic can you think of a efficient way to implement the frequency-offset estimator to obtain even finer resolution and to minimize the number of correlations that are required? (hint: think of a binary search applied to this)
+For the most likely PSS index i and Nf with m = 0, plot the peak value of the statistic in 100 Hz steps and a ±7.5kHz window around the carrier frequency (i.e. ∆fmax/∆fmin = 75). 
+
+What is the most likely frequency-offset? 
+
+Based on the shape of the statistic can you think of a efficient way to implement the frequency-offset estimator to obtain even finer resolution and to minimize the number of correlations that are required? (hint: think of a binary search applied to this)
 
 
 ```
