@@ -9,7 +9,9 @@ export UHD_IMAGES_DIR=/opt/local/share/uhd/images
 jupyter lab
 ```
 
-<img src=images/WIFI-card-status.png width='50%' height='50%' > </img>
+<img src=images/WIFI-card-status-free.png width='50%' height='50%' > </img>
+
+<img src=images/WIFI-card-status-huawei.png width='50%' height='50%' > </img>
 
 # References
 
