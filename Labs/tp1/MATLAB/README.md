@@ -23,3 +23,6 @@ m2_chan = 10*log10(abs(conv(rxs3,conj(fliplr(pss2_t)))))
 plot(m2_chan); axis ([1 10000 10 60])
 ```
 
+# References 
+
+- [ ] [Sharetechnote PSS](https://www.sharetechnote.com/html/Handbook_LTE_PSS.html)
