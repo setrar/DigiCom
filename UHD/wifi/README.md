@@ -15,6 +15,28 @@ jupyter lab
 
 - [ ] [Wi-Fi Channels, Frequencies, Bands & Bandwidths](https://www.electronics-notes.com/articles/connectivity/wifi-ieee-802-11/channels-frequencies-bands-bandwidth.php)
 
+The table given below provides the frequencies for the total of fourteen 802.11 Wi-Fi channels that are available around the globe. Not all of these channels are available for Wi-Fi installations in all countries.
+
+***2.4 GHz Wi-Fi channel frequencies***
+
+Often WiFi routers are set to channel 6 as the default, and therefore the set of channels 1, 6 and 11 is possibly the most widely used.
+ 
+| CHANNEL NUMBER | LOWER FREQUENCY MHZ | CENTER FREQUENCY MHZ | UPPER FREQUENCY MHZ |
+| 1	| 2401	| 2412	| 2423 |
+| 2	| 2406	| 2417	| 2428 |
+| 3	| 2411	| 2422	| 2433 |
+| 4	| 2416	| 2427	| 2438 |
+| 5	| 2421	| 2432	| 2443 |
+| 6	| 2426	| 2437	| 2448 |
+| 7	| 2431	| 2442	| 2453 |
+| 8	| 2436	| 2447	| 2458 |
+| 9	| 2441	| 2452	| 2463 |
+| 10	| 2446	| 2457	| 2468 |
+| 11	| 2451	| 2462	| 2473 |
+| 12	| 2456	| 2467	| 2478 |
+| 13	| 2461	| 2472	| 2483 |
+| 14	| 2473	| 2484	| 2495 |
+
 ***5 GHz WiFi channels & frequencies***
 
 | CHANNEL NUMBER	| FREQUENCY MHZ	| EUROPE (ETSI)	| NORTH AMERICA (FCC)	| JAPAN |
@@ -26,7 +48,8 @@ jupyter lab
 | 108	| 5540	| DFS / TPC	| DFS	| DFS / TPC | 
 | 112	| 5560	| DFS / TPC	| DFS	| DFS / TPC | 
 | 116	| 5580	| DFS / TPC	| DFS	| DFS / TPC | 
-| 120	| 5600	| DFS / TPC	| No Access	| DFS / TPC | 
+| 120	| 5600	| DFS / TPC	| No Access	| DFS / TPC |
+
 
 - [ ] [Detecting the wifi signal power spectrum using USRP and Simulnik](https://www.mathworks.com/matlabcentral/answers/197123-detecting-the-wifi-signal-power-spectrum-using-usrp-and-simulnik)
 
