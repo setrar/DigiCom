@@ -22,6 +22,7 @@ The table given below provides the frequencies for the total of fourteen 802.11 
 Often WiFi routers are set to channel 6 as the default, and therefore the set of channels 1, 6 and 11 is possibly the most widely used.
  
 | CHANNEL NUMBER | LOWER FREQUENCY MHZ | CENTER FREQUENCY MHZ | UPPER FREQUENCY MHZ |
+|-|-|-|-|
 | 1	| 2401	| 2412	| 2423 |
 | 2	| 2406	| 2417	| 2428 |
 | 3	| 2411	| 2422	| 2433 |
