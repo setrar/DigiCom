@@ -193,3 +193,29 @@ m2_chan = 10*log(abs(conv(rxs3,conj(fliplr(pss2_t)))));
    - The final result is stored in the variable `m2_chan`. It represents the logarithmic power envelope of the convolution between the received signal `rxs3` and the complex conjugate of the time-reversed PSS signal.
 
 In summary, this code calculates the power envelope of the convolution between the received signal (`rxs3`) and the complex conjugate of the time-reversed PSS signal (`pss2_t`). The result is expressed in decibels (dB) on a logarithmic scale.
+
+## &#x1F431; From matlab to Julia
+
+```matlab
+m2_chan = 10*log(abs(conv(rxs3,conj(fliplr(pss2_t)))));
+```
+
+The equivalent Julia code for `m2_chan = 10*log(abs(conv(rxs3,conj(fliplr(pss2_t)))));` would be as follows:
+
+```julia
+m2_chan = 10 * log10(abs(conv(rxs3, conj(reverse(pss2_t)))));
+```
+
+Here's a breakdown of the Julia code:
+
+1. `reverse(pss2_t)`: This function reverses the order of elements in the vector `pss2_t`.
+
+2. `conj(reverse(pss2_t))`: This computes the complex conjugate of each element in the reversed vector.
+
+3. `conv(rxs3, conj(reverse(pss2_t)))`: This computes the convolution of the vectors `rxs3` and `conj(reverse(pss2_t))`.
+
+4. `abs(conv(rxs3, conj(reverse(pss2_t))))`: This takes the absolute values of the elements in the result of the convolution.
+
+5. `10 * log10(...)`: This scales the result by a factor of 10 and computes the logarithm base 10 of each element.
+
+The final result is stored in the variable `m2_chan`, representing the logarithmic power envelope of the convolution between the received signal `rxs3` and the complex conjugate of the time-reversed PSS signal in decibels (dB).
