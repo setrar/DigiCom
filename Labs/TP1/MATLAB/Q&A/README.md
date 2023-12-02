@@ -132,3 +132,64 @@ disp(['Most likely frequency offset: ', num2str(most_likely_offset), ' Hz']);
 ```
 
 This code assumes a simplified scenario and uses a cosine signal as an example. Replace the `received_signal` with your actual received signal, and replace the PSS detection part (`findpeaks`) with your specific algorithm for PSS detection. Adjust parameters as needed based on your system and signal characteristics.
+
+## &#x1F431; what is the meaning of the below code?
+
+```matlab
+pss2_t = ifft(pss_2.');
+pss2_t = pss2_t / norm(pss2_t);
+pss2_t = [pss2_t(((2048-143):2048)) pss2_t];
+```
+
+This code seems to be related to processing a signal associated with a communication system, specifically involving the Primary Synchronization Signal (PSS) in the context of LTE (Long-Term Evolution) or a similar wireless communication standard.
+
+Let's break down the code step by step:
+
+1. `pss2_t = ifft(pss_2.')`:
+   - `pss_2` is a complex-valued vector, possibly representing the frequency-domain version of the PSS signal.
+   - `ifft` stands for "inverse fast Fourier transform," and it transforms the signal from the frequency domain to the time domain. The `.'` performs the conjugate transpose, which is often necessary when dealing with frequency domain representations.
+   - The result, `pss2_t`, is the PSS signal in the time domain.
+
+2. `pss2_t = pss2_t / norm(pss2_t)`:
+   - This line normalizes the amplitude of the PSS signal in the time domain. It divides each element of the signal by its Euclidean norm (magnitude) to ensure that the signal has a unit norm. This normalization is common in signal processing to make signals comparable or to avoid amplitude-related issues.
+
+3. `pss2_t = [pss2_t(((2048-143):2048)) pss2_t]`:
+   - This line appears to be concatenating the normalized PSS signal with a portion of itself.
+   - The notation `((2048-143):2048)` represents a range of indices from `2048-143` to `2048`.
+   - The purpose of this concatenation might be related to handling circular convolution or other signal processing considerations.
+
+In summary, the code processes the frequency-domain representation of a PSS signal. It transforms it to the time domain, normalizes its amplitude, and then concatenates it with a portion of itself. The specific details of why this is done would depend on the context of the overall signal processing or communication system algorithm in which this code is used.
+
+
+## &#x1F431; what is the meaning of this code?
+
+```matlab
+m2_chan = 10*log(abs(conv(rxs3,conj(fliplr(pss2_t)))));
+```
+
+Let's break down the MATLAB code `m2_chan = 10*log(abs(conv(rxs3,conj(fliplr(pss2_t)))));`:
+
+```matlab
+m2_chan = 10*log(abs(conv(rxs3,conj(fliplr(pss2_t)))));
+```
+
+1. **`fliplr(pss2_t)`**:
+   - `fliplr` stands for "flip left to right." It reverses the order of elements in the vector `pss2_t`.
+
+2. **`conj(fliplr(pss2_t))`**:
+   - `conj` computes the complex conjugate of each element in the vector obtained from `fliplr(pss2_t)`.
+
+3. **`conv(rxs3,conj(fliplr(pss2_t)))`**:
+   - `conv` computes the convolution of the two vectors `rxs3` and `conj(fliplr(pss2_t))`. This operation involves sliding and multiplying the elements of one vector with the reversed and complex-conjugated elements of the other vector.
+
+4. **`abs(conv(rxs3,conj(fliplr(pss2_t))))`**:
+   - `abs` computes the absolute values of the elements in the result of the convolution. This step ensures that the result is a real-valued vector.
+
+5. **`10*log(...)`**:
+   - `log` computes the natural logarithm of each element in the vector obtained from `abs(conv(rxs3,conj(fliplr(pss2_t))))`.
+   - `10*log(...)` scales the result by a factor of 10. This is a common operation to convert linear scale values to a logarithmic scale (in this case, in decibels).
+
+6. **`m2_chan = 10*log(abs(conv(rxs3,conj(fliplr(pss2_t)))));`**:
+   - The final result is stored in the variable `m2_chan`. It represents the logarithmic power envelope of the convolution between the received signal `rxs3` and the complex conjugate of the time-reversed PSS signal.
+
+In summary, this code calculates the power envelope of the convolution between the received signal (`rxs3`) and the complex conjugate of the time-reversed PSS signal (`pss2_t`). The result is expressed in decibels (dB) on a logarithmic scale.
