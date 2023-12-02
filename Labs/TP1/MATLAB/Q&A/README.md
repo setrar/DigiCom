@@ -131,6 +131,8 @@ most_likely_offset = delta_f_values(idx_max);
 disp(['Most likely frequency offset: ', num2str(most_likely_offset), ' Hz']);
 ```
 
+This code assumes a simplified scenario and uses a cosine signal as an example. Replace the `received_signal` with your actual received signal, and replace the PSS detection part (`findpeaks`) with your specific algorithm for PSS detection. Adjust parameters as needed based on your system and signal characteristics.
+
 ## &#x1F431; what is the meaning of the below code?
 
 ```matlab
@@ -138,8 +140,6 @@ pss2_t = ifft(pss_2.');
 pss2_t = pss2_t / norm(pss2_t);
 pss2_t = [pss2_t(((2048-143):2048)) pss2_t];
 ```
-
-This code assumes a simplified scenario and uses a cosine signal as an example. Replace the `received_signal` with your actual received signal, and replace the PSS detection part (`findpeaks`) with your specific algorithm for PSS detection. Adjust parameters as needed based on your system and signal characteristics.
 
 This code seems to be related to processing a signal associated with a communication system, specifically involving the Primary Synchronization Signal (PSS) in the context of LTE (Long-Term Evolution) or a similar wireless communication standard.
 
