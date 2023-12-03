@@ -30,7 +30,7 @@ Breaking down the components:
 \end{cases*}
 ```
 
-So, \(\tilde{S}_{PSS,i}(n)\) is a time-domain signal that carries synchronization information for a specific synchronization index in a communication system. It plays a role in helping the receiver synchronize with the transmitted signal and is part of the overall synchronization and signal detection process.
+So, $$\tilde{S}_{PSS,i}(n)$$ is a time-domain signal that carries synchronization information for a specific synchronization index in a communication system. It plays a role in helping the receiver synchronize with the transmitted signal and is part of the overall synchronization and signal detection process.
 
 ## &#x1F431; What is the most likely frequency-offset?
 
