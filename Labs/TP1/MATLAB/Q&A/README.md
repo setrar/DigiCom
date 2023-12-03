@@ -8,7 +8,7 @@ In the context of signal processing and communication systems, the notation $$\t
 Breaking down the components:
 
 $$
-\begin{cases}
+\begin{gather}
   - \(\tilde{S}_{PSS,i}(n)\): This denotes the PSS signal for the synchronization index \(i\) at time \(n\).
 \\  
   - \(\tilde{S}\): The tilde (\(\tilde{}\)) often represents that the quantity is a modified or transformed version of the original signal.
@@ -18,7 +18,7 @@ $$
   - \(i\): The synchronization index. In a communication system, there might be multiple synchronization signals, and \(i\) identifies which specific PSS signal is being referred to.
 \\
   - \(n\): Time index. This represents the discrete-time instances at which the signal is sampled.
-\end{cases}
+\end{gather}
 $$
 
 So, \(\tilde{S}_{PSS,i}(n)\) is a time-domain signal that carries synchronization information for a specific synchronization index in a communication system. It plays a role in helping the receiver synchronize with the transmitted signal and is part of the overall synchronization and signal detection process.
