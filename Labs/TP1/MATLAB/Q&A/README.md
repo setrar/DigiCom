@@ -32,6 +32,21 @@ Breaking down the components:
 
 So, $$\tilde{S}_{PSS,i}(n)$$ is a time-domain signal that carries synchronization information for a specific synchronization index in a communication system. It plays a role in helping the receiver synchronize with the transmitted signal and is part of the overall synchronization and signal detection process.
 
+## &#x1F431; What is then $$y(n)=e^{2\pi j \Delta f n} \tilde{S}_{PSS,i}(n) ∗ h(n) + z(n)$$
+
+The expression \(y(n) = e^{2\pi j \Delta f n} \tilde{S}_{PSS,i}(n) * h(n) + z(n)\) represents a received signal in a communication system, where:
+
+- \(y(n)\) is the received signal at discrete time \(n\).
+- \(e^{2\pi j \Delta f n}\) introduces a frequency offset \(\Delta f\) into the signal. This term represents the phase shift caused by a frequency offset \(\Delta f\).
+- \(\tilde{S}_{PSS,i}(n)\) is the Primary Synchronization Signal (PSS) for the \(i\)-th synchronization index at time \(n\).
+- \(*\) denotes the convolution operation.
+- \(h(n)\) is the channel impulse response or the effect of the communication channel on the signal.
+- \(z(n)\) represents additive noise in the received signal.
+
+This expression models the received signal in a communication system, considering the effects of a frequency offset, the presence of a synchronization signal (PSS), the impact of the communication channel, and the addition of noise. The convolution with \(h(n)\) accounts for the distortion introduced by the communication channel.
+
+In summary, this equation describes the received signal as a combination of a frequency-shifted synchronization signal convolved with the channel impulse response, and the addition of noise. The goal in communication systems is often to estimate or recover the original signal, considering these various factors.
+
 ## &#x1F431; What is the most likely frequency-offset?
 
 For the most likely PSS index i and Nf with m = 0, plot the peak value of the statistic in 100 Hz steps and a ±7.5kHz window around the carrier frequency (i.e. ∆fmax/∆fmin = 75).
