@@ -3,7 +3,7 @@
 
 ## &#x1F431; what is this? $$\tilde{S}_{PSS,i}​(n) $$
 
-In the context of signal processing and communication systems, the notation \(\tilde{S}_{PSS,i}(n)\) typically represents a time-domain signal associated with the Primary Synchronization Signal (PSS) for the \(i\)-th synchronization index.
+In the context of signal processing and communication systems, the notation $$\tilde{S}_{PSS,i}(n)$$ typically represents a time-domain signal associated with the Primary Synchronization Signal (PSS) for the $$i$$-th synchronization index.
 
 Breaking down the components:
 
