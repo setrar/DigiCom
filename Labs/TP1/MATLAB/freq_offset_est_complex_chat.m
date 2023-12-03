@@ -10,6 +10,14 @@ t = (0:N-1) * Ts;
 delta_f_true = 2e3;  % True frequency offset in Hz
 received_signal_complex = exp(1i*2*pi*(fc + delta_f_true)*t);
 
+% FFT to find spectrum
+frequencies = linspace(-fs/2, fs/2, N);
+spectrum = fftshift(fft(received_signal_complex));
+
+% Search for PSS peaks
+% (Replace this part with your actual PSS detection algorithm)
+[pks, locs] = findpeaks(abs(spectrum));
+
 % Initial search range
 search_range = [-delta_f_range, delta_f_range];
 resolution_threshold = 1e-2;  % Adjust as needed
