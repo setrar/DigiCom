@@ -9,15 +9,23 @@ Breaking down the components:
 
 $$
 \begin{gather}
-  - \tilde{S}_{PSS,i}(n): This denotes the PSS signal for the synchronization index i at time n.
+  - \tilde{S}_{PSS,i}(n) \text{ : This denotes the PSS signal for the synchronization index i at time n. }
 \\  
-  - \(\tilde{S}\): The tilde (\(\tilde{}\)) often represents that the quantity is a modified or transformed version of the original signal.
+  - \tilde{S}: \text { The tilde } (\tilde{}) \text { often represents that the quantity is a modified or transformed version of the original signal. }
 \\  
-  - \(PSS\): Primary Synchronization Signal. In communication systems, especially in wireless communication, synchronization signals like the PSS are used to help receivers synchronize with the transmitted signal. The PSS is often part of the synchronization process in cellular networks.
+  - PSS \text{ : Primary Synchronization Signal. }
 \\
-  - \(i\): The synchronization index. In a communication system, there might be multiple synchronization signals, and \(i\) identifies which specific PSS signal is being referred to.
+      \text{ In communication systems, especially in wireless communication, synchronization signals like the PSS }
+      \text{ are used to help receivers synchronize with the transmitted signal. }
+    \\
+      \text{ The PSS is often part of the synchronization process in cellular networks.}
 \\
-  - \(n\): Time index. This represents the discrete-time instances at which the signal is sampled.
+  - i \text{ : The synchronization index. }
+     \text { In a communication system, there might be multiple synchronization signals, and }
+    \\
+    i \text{ identifies which specific PSS signal is being referred to. }
+\\
+  - n \text{ : Time index. This represents the discrete-time instances at which the signal is sampled. }
 \end{gather}
 $$
 
