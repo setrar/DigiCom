@@ -3,19 +3,23 @@
 
 ## &#x1F431; what is this? $$\tilde{S}_{PSS,i}​(n) $$
 
-In the context of signal processing and communication systems, the notation $$\tilde{S}_{PSS,i}(n)$$ typically represents a time-domain signal associated with the Primary Synchronization Signal (PSS) for the $$i$$-th synchronization index.
+In the context of signal processing and communication systems, the notation $$\tilde{S}_{PSS,i}(n)$$ typically represents a time-domain signal associated with the Primary Synchronization Signal (PSS) for the i-th synchronization index.
 
 Breaking down the components:
 
-- \(\tilde{S}_{PSS,i}(n)\): This denotes the PSS signal for the synchronization index \(i\) at time \(n\).
-  
+$$
+\begin{cases}
+  - \(\tilde{S}_{PSS,i}(n)\): This denotes the PSS signal for the synchronization index \(i\) at time \(n\).
+\\  
   - \(\tilde{S}\): The tilde (\(\tilde{}\)) often represents that the quantity is a modified or transformed version of the original signal.
-  
+\\  
   - \(PSS\): Primary Synchronization Signal. In communication systems, especially in wireless communication, synchronization signals like the PSS are used to help receivers synchronize with the transmitted signal. The PSS is often part of the synchronization process in cellular networks.
-
+\\
   - \(i\): The synchronization index. In a communication system, there might be multiple synchronization signals, and \(i\) identifies which specific PSS signal is being referred to.
-
+\\
   - \(n\): Time index. This represents the discrete-time instances at which the signal is sampled.
+\end{cases}
+$$
 
 So, \(\tilde{S}_{PSS,i}(n)\) is a time-domain signal that carries synchronization information for a specific synchronization index in a communication system. It plays a role in helping the receiver synchronize with the transmitted signal and is part of the overall synchronization and signal detection process.
 
