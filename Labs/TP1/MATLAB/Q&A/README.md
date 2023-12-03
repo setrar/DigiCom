@@ -15,7 +15,8 @@ Breaking down the components:
 \\  
   - PSS \text{ : Primary Synchronization Signal. }
 \\
-      \text{ In communication systems, especially in wireless communication, synchronization signals like the PSS }
+      \quad \text{ In communication systems, especially in wireless communication, synchronization signals like the PSS }
+\\
       \text{ are used to help receivers synchronize with the transmitted signal. }
     \\
       \text{ The PSS is often part of the synchronization process in cellular networks.}
