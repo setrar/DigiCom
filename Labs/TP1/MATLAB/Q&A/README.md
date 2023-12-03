@@ -1,7 +1,7 @@
 # Questions GPT
 
 
-## &#x1F431; what is \tilde{S}_{PSS,i}​(n)?
+## &#x1F431; what is $$\tilde{S}_{PSS,i}​(n) $$ ?
 
 In the context of signal processing and communication systems, the notation \(\tilde{S}_{PSS,i}(n)\) typically represents a time-domain signal associated with the Primary Synchronization Signal (PSS) for the \(i\)-th synchronization index.
 
