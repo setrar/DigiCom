@@ -38,12 +38,17 @@ The expression $$y(n) = e^{2\pi j \Delta f n} \tilde{S}_{PSS,i}(n) * h(n) + z(n)
 
 ```math
 \begin{cases*}
-- y(n) is the received signal at discrete time n.
-- e^{2\pi j \Delta f n} introduces a frequency offset \Delta f into the signal. This term represents the phase shift caused by a frequency offset \Delta f.
-- \tilde{S}_{PSS,i}(n) is the Primary Synchronization Signal (PSS) for the i-th synchronization index at time n.
-- * denotes the convolution operation.
-- h(n) is the channel impulse response or the effect of the communication channel on the signal.
-- z(n) represents additive noise in the received signal.
+- y(n) \text{ is the received signal at discrete time n.}
+\\
+- e^{2\pi j \Delta f n} \text{ introduces a frequency offset } \Delta f \text{ into the signal. This term represents the phase shift caused by a frequency offset } \Delta f.
+\\
+- \tilde{S}_{PSS,i}(n) \text{ is the Primary Synchronization Signal (PSS) for the i-th synchronization index at time n. }
+\\
+- * \text{ denotes the convolution operation. }
+\\
+- h(n) \text{ is the channel impulse response or the effect of the communication channel on the signal. }
+\\
+- z(n) \text{ represents additive noise in the received signal. }
 \end{cases*}
 ```
 
