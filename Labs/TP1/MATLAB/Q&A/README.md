@@ -22,9 +22,9 @@ Breaking down the components:
       \quad \text{ The PSS is often part of the synchronization process in cellular networks.}
 \\
   - i \text{ : The synchronization index. }
-     \text { In a communication system, there might be multiple synchronization signals, and }
+     \quad \text { In a communication system, there might be multiple synchronization signals, and }
     \\
-    i \text{ identifies which specific PSS signal is being referred to. }
+    \qquad i \text{ identifies which specific PSS signal is being referred to. }
 \\
   - n \text{ : Time index. This represents the discrete-time instances at which the signal is sampled. }
 \end{cases*}
