@@ -17,9 +17,9 @@ Breaking down the components:
 \\
       \quad \text{ In communication systems, especially in wireless communication, synchronization signals like the PSS }
 \\
-      \text{ are used to help receivers synchronize with the transmitted signal. }
+      \quad \quad \text{ are used to help receivers synchronize with the transmitted signal. }
     \\
-      \text{ The PSS is often part of the synchronization process in cellular networks.}
+      \quad \text{ The PSS is often part of the synchronization process in cellular networks.}
 \\
   - i \text{ : The synchronization index. }
      \text { In a communication system, there might be multiple synchronization signals, and }
