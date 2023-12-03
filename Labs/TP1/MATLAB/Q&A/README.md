@@ -1,6 +1,6 @@
 # Questions GPT
 
-$$
+```math
 \begin{gather*}
 \text { The expression you provided is a mathematical representation of a received signal } y(n) 
 \\
@@ -46,7 +46,7 @@ y(n) = e^{2\pi j\Delta f n} \tilde{S}_{PSS,i}(n) * h(n) + z(n)
 \\
 \text { where synchronization, channel effects, and noise need to be considered in the received signal.}
 \end{gather*}
-$$
+```
 
 ## &#x1F431; What is the most likely frequency-offset?
 
