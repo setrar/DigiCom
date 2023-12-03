@@ -1,52 +1,21 @@
 # Questions GPT
 
-```math
-\begin{gather*}
-\text { The expression you provided is a mathematical representation of a received signal } y(n) 
-\\
-\text{ in the context of a communication system, }
-\\
-\text{ particularly when dealing with synchronization and the detection of signals. }
-\\
-\text{ Let's break down the components of the expression: }
-\\
-y(n) = e^{2\pi j\Delta f n} \tilde{S}_{PSS,i}(n) * h(n) + z(n)
-\\
-\begin{cases}
-- n \text{ : Time index. }
-\\
-- \Delta f \text{ : Frequency offset. }
-\\
-- e^{2\pi j\Delta f n} : \; \text{ This term represents the frequency offset, where } e^{j\theta} \text{  is a complex exponential function with a phase angle } \theta .
-\\
-\qquad \text{ In this case, it introduces a frequency offset } \Delta f \text{  into the signal.}
-\\
-- \tilde{S}_{PSS,i}(n) \text{ : The PSS (Primary Synchronization Signal) for the index } i \text{  at time } n 
-\\
-\text{ . It could be a complex-valued sequence associated with a specific synchronization signal.}
-\\
-- h(n) \text{ : This represents the channel response or the impulse response of the channel through which the signal is transmitted. }
-\\
-\text{ It describes how the signal is distorted or affected by the communication channel.}
-\\
-- * \text{ : The convolution operator. }
-\\
-\text { The convolution of } \tilde{PSS}_i(n) \text{  and } h(n) \text{ represents the effect of the channel on the PSS signal. }
-\\
-- z(n) \text{ : This term represents additive noise or interference in the received signal. }
-\end{cases}
-\\
-\text{ In summary, the expression models a received signal } y(n) 
-\\
-\text{  that includes a frequency-offset component, a synchronization signal } (\tilde{PSS}_i(n)) 
-\\
-\text{ convolved with the channel impulse response, and additive noise } (z(n))  
-\\
-\text{ . This kind of model is often used in the analysis of communication systems, }
-\\
-\text { where synchronization, channel effects, and noise need to be considered in the received signal.}
-\end{gather*}
-```
+
+In the context of signal processing and communication systems, the notation \(\tilde{S}_{PSS,i}(n)\) typically represents a time-domain signal associated with the Primary Synchronization Signal (PSS) for the \(i\)-th synchronization index.
+
+Breaking down the components:
+
+- \(\tilde{S}_{PSS,i}(n)\): This denotes the PSS signal for the synchronization index \(i\) at time \(n\).
+  
+  - \(\tilde{S}\): The tilde (\(\tilde{}\)) often represents that the quantity is a modified or transformed version of the original signal.
+  
+  - \(PSS\): Primary Synchronization Signal. In communication systems, especially in wireless communication, synchronization signals like the PSS are used to help receivers synchronize with the transmitted signal. The PSS is often part of the synchronization process in cellular networks.
+
+  - \(i\): The synchronization index. In a communication system, there might be multiple synchronization signals, and \(i\) identifies which specific PSS signal is being referred to.
+
+  - \(n\): Time index. This represents the discrete-time instances at which the signal is sampled.
+
+So, \(\tilde{S}_{PSS,i}(n)\) is a time-domain signal that carries synchronization information for a specific synchronization index in a communication system. It plays a role in helping the receiver synchronize with the transmitted signal and is part of the overall synchronization and signal detection process.
 
 ## &#x1F431; What is the most likely frequency-offset?
 
