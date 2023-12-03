@@ -7,7 +7,7 @@ In the context of signal processing and communication systems, the notation $$\t
 
 Breaking down the components:
 
-$$
+```math
 \begin{gather}
   - \tilde{S}_{PSS,i}(n) \text{ : This denotes the PSS signal for the synchronization index i at time n. }
 \\  
@@ -27,7 +27,7 @@ $$
 \\
   - n \text{ : Time index. This represents the discrete-time instances at which the signal is sampled. }
 \end{gather}
-$$
+```
 
 So, \(\tilde{S}_{PSS,i}(n)\) is a time-domain signal that carries synchronization information for a specific synchronization index in a communication system. It plays a role in helping the receiver synchronize with the transmitted signal and is part of the overall synchronization and signal detection process.
 
