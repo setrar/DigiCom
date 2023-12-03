@@ -9,7 +9,7 @@ Breaking down the components:
 
 $$
 \begin{gather}
-  - \(\tilde{S}_{PSS,i}(n)\): This denotes the PSS signal for the synchronization index \(i\) at time \(n\).
+  - \tilde{S}_{PSS,i}(n): This denotes the PSS signal for the synchronization index i at time n.
 \\  
   - \(\tilde{S}\): The tilde (\(\tilde{}\)) often represents that the quantity is a modified or transformed version of the original signal.
 \\  
