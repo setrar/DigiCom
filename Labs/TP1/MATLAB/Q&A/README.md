@@ -34,14 +34,18 @@ So, $$\tilde{S}_{PSS,i}(n)$$ is a time-domain signal that carries synchronizatio
 
 ## &#x1F431; What is then $$y(n)=e^{2\pi j \Delta f n} \tilde{S}_{PSS,i}(n) ∗ h(n) + z(n)$$
 
-The expression \(y(n) = e^{2\pi j \Delta f n} \tilde{S}_{PSS,i}(n) * h(n) + z(n)\) represents a received signal in a communication system, where:
+The expression $$y(n) = e^{2\pi j \Delta f n} \tilde{S}_{PSS,i}(n) * h(n) + z(n)$$ represents a received signal in a communication system, where:
 
+```math
+\begin{cases*}
 - \(y(n)\) is the received signal at discrete time \(n\).
 - \(e^{2\pi j \Delta f n}\) introduces a frequency offset \(\Delta f\) into the signal. This term represents the phase shift caused by a frequency offset \(\Delta f\).
 - \(\tilde{S}_{PSS,i}(n)\) is the Primary Synchronization Signal (PSS) for the \(i\)-th synchronization index at time \(n\).
 - \(*\) denotes the convolution operation.
 - \(h(n)\) is the channel impulse response or the effect of the communication channel on the signal.
 - \(z(n)\) represents additive noise in the received signal.
+\end{cases*}
+```
 
 This expression models the received signal in a communication system, considering the effects of a frequency offset, the presence of a synchronization signal (PSS), the impact of the communication channel, and the addition of noise. The convolution with \(h(n)\) accounts for the distortion introduced by the communication channel.
 
