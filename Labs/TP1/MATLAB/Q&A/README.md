@@ -38,7 +38,7 @@ The expression $$y(n) = e^{2\pi j \Delta f n} \tilde{S}_{PSS,i}(n) * h(n) + z(n)
 
 ```math
 \begin{cases*}
-- y(n) \text{ is the received signal at discrete time n.}
+\quad - y(n) \text{ is the received signal at discrete time n.}
 \\
 - e^{2\pi j \Delta f n} \text{ introduces a frequency offset } \Delta f \text{ into the signal. This term represents the phase shift caused by a frequency offset } \Delta f.
 \\
