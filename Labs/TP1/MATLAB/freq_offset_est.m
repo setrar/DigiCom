@@ -13,11 +13,14 @@ function [ f_offset ] = freq_offset_est(signal, pss_1, Nf)
   L = length(pss_1);
   t = 0:(1/Fs):((L-1)/Fs);
 
-  signal_part = signal(Nf:(Nf + L - 1))
-  convolve = conj(pss_1).*signal_part.'
+  signal_part = signal(Nf:(Nf + L - 1));
+  trans = signal_part.'
+  transConj = conj(pss_1).* trans;
 
   for j = 1:length(m)
-    signal_offset = sum(exp(-2*pi*1i*m(j).*t).*convolve)
+    exp_comp = exp(-2*pi*1i*m(j).*t);
+    fprintf('exp_comp %d \n',length(exp_comp));
+    signal_offset = sum(exp_comp.*transConj);
     value = abs(signal_offset).^2
     Y(j) = Y(j) + value;
   end
@@ -31,5 +34,7 @@ function [ f_offset ] = freq_offset_est(signal, pss_1, Nf)
   subtitle('Frequency offset');
 
   plot(1:length(m),Y,".")
+
+  length(Y)
 
 end
