@@ -31,7 +31,7 @@ ans = 766
 ```
 
 
-<img src=images/CFO_estimate.png width='' height='' > </img>
+<img src=images/CFO_estimate.png width='50%' height='50%' > </img>
 
 # References 
 
