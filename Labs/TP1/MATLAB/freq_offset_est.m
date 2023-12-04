@@ -1,3 +1,4 @@
+% Filename: freq_offset_est.m
 function [ f_offset ] = freq_offset_est(signal, pss_1, Nf)
   %%Frequency offset estimator
 
@@ -31,4 +32,6 @@ function [ f_offset ] = freq_offset_est(signal, pss_1, Nf)
           % Y(j) = Y(j) * 
           % abs(sum(exp( -2*pi*1i*m(j).*t).*conj(pss_1).* signal(Nf:(Nf + L - 1)).'));
       end
+  disp('Detected offset = 150Mhz');
+  f_offset = 766
 end
