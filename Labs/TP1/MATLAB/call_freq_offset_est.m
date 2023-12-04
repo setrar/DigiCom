@@ -1,9 +1,9 @@
 % Call the frequency offset function
 load('rxsignal_withchannelandfreqoff.mat')
 
-run('pss.m')
+run('pss.m');
 
-m2_chan = 10*log(abs(conv(rxs3,conj(fliplr(pss2_t)))));
+m2_chan = 10*log10(abs(conv(rxs3,conj(fliplr(pss2_t)))));
 [c2_chan,NF2_chan] = max(m2_chan);
 
 % Grab the function Profs Frequency Offset with his values

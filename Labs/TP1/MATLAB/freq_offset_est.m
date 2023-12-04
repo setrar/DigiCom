@@ -2,15 +2,10 @@
 function [ f_offset ] = freq_offset_est(signal, pss_1, Nf)
   %%Frequency offset estimator
 
-  %To make sure the signals are generated befor running this func.
-  pss;
-
-  figure;
-  %subtitle('Frequency offset');
   DELTA_F = 10;
 
   Fs = 61.44e6;
-  f_min = 7500;
+  f_min = -7500;
   f_max = 7500;
 
   m = f_min:DELTA_F:f_max;
@@ -18,10 +13,23 @@ function [ f_offset ] = freq_offset_est(signal, pss_1, Nf)
   L = length(pss_1);
   t = 0:(1/Fs):((L-1)/Fs);
 
-  %figure
-      for j = 1:length(m)
-        Y(j) = Y(j) * abs(sum(exp(-2*pi*1i*m(j).*t) .* conj(pss_1).*signal(Nf:(Nf + L - 1)).')).^2;
+  signal_part = signal(Nf:(Nf + L - 1))
+  convolve = conj(pss_1).*signal_part.'
 
-      end
-  disp('Detected offset = 150Mhz');
+  for j = 1:length(m)
+    signal_offset = sum(exp(-2*pi*1i*m(j).*t).*convolve)
+    value = abs(signal_offset).^2
+    Y(j) = Y(j) + value;
+  end
+  
+  [A_fo, fo] = max(Y)
+  % disp('Detected offset = 150Mhz',real(m2_chan));
+
+  fprintf('m %d, A_fo %d, fo %d \n',length(m),A_fo,fo);
+
+  figure;
+  subtitle('Frequency offset');
+
+  plot(1:length(m),Y,".")
+
 end
