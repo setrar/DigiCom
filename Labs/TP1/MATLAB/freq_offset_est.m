@@ -5,7 +5,7 @@ function [ f_offset ] = freq_offset_est(signal, pss_1, Nf)
   pss;
 
   figure;
-  subtitle('Frequency offset');
+  %subtitle('Frequency offset');
   DELTA_F = 10;
 
   Fs = 61.44e6;
@@ -17,10 +17,18 @@ function [ f_offset ] = freq_offset_est(signal, pss_1, Nf)
   L = length(pss_1);
   t = 0:(1/Fs):((L-1)/Fs);
 
-  % m2_chan = 10*log(abs(conv(signal,conj(fliplr(pss_1)))));
-
   %figure
       for j = 1:length(m)
-          Y(j) = Y(j) + abs(sum(exp( -2*pi*1j)));
+        % Calculate the complex exponential term
+        exponential_term = exp(-2*pi*1i*m(j).*t);
+
+        % Calculate the complex conjugate of xi
+        x_i_conjugate = conj(pss_1);
+
+        % Calculate Y for the current term and accumulate
+        Y(j) = Y(j) * exponential_term .* x_i_conjugate .* signal(Nf:(Nf + L - 1));
+
+          % Y(j) = Y(j) * 
+          % abs(sum(exp( -2*pi*1i*m(j).*t).*conj(pss_1).* signal(Nf:(Nf + L - 1)).'));
       end
 end
