@@ -16,4 +16,15 @@ m2_chan = 10*log(abs(conv(rxs3,conj(fliplr(pss2_t)))));
 % Grab the function Profs Frequency Offset with his values
 freq_offset_est(rxs3,pss2_t,NF2_chan-length(pss2_t)+1)
 % Detected_offset: 150 Hz
-% ans = 766
+% ans = 
+
+% Example usage
+received_pss = rxs3;  % Your received PSS data
+expected_pss = pss_2;  % Your expected PSS data
+
+% Call the MATLAB function
+offset = frequency_offset_estimation(received_pss, expected_pss);
+
+% Display the result
+disp(offset);
+plot(10*log(abs(offset)))
