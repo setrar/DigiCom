@@ -26,7 +26,7 @@ function [ f_offset ] = freq_offset_est(signal, pss_1, Nf)
         x_i_conjugate = conj(pss_1);
 
         % Calculate Y for the current term and accumulate
-        Y(j) = Y(j) * exponential_term .* x_i_conjugate .* signal(Nf:(Nf + L - 1));
+        % Y(j) = Y(j) * exponential_term .* x_i_conjugate .* signal(Nf:(Nf + L - 1));
 
           % Y(j) = Y(j) * 
           % abs(sum(exp( -2*pi*1i*m(j).*t).*conj(pss_1).* signal(Nf:(Nf + L - 1)).'));
