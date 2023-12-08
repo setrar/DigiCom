@@ -57,7 +57,9 @@ To find the power spectral density (PSD) of a signal } $$ x(t) $$ given in the f
 
 1. Find the autocorrelation function $$ R_x(\tau) $$ of the signal $$ x(t) $$. The autocorrelation function is defined as:
 
-   $$ R_x(\tau) = \lim_{T \to \infty} \frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} x(t) \cdot x(t - \tau) \, dt $$
+```math
+   R_x(\tau) = \lim_{T \to \infty} \frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} x(t) \cdot x(t - \tau) \, dt 
+```
 
 2. Apply the Fourier transform to the autocorrelation function $$ R_x(\tau) $$ to obtain the power spectral density $$ S_x(f) $$:
 
