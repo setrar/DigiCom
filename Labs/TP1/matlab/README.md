@@ -9,7 +9,7 @@
 cd '~/Developer/DigiCom/Labs/tp1/MATLAB'
 load('rxsignal_withchannelandfreqoff.mat')
 run('pss')
-m2_chan = 10*log10(abs(conv(rxs3,conj(fliplr(pss2_t)))))
+m2_chan = 10*log10(abs(conv(rxs3,conj(fliplr(pss2_t)))));
 [c2_chan,NF2_chan] = max(m2_chan)
 plot(m2_chan); axis ([1 10000 10 60])
 ```
