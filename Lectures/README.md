@@ -34,3 +34,5 @@ N_0
 - [ ] [Polar Codes with Near-Optimal Convergence to Channel Capacity](http://reports-archive.adm.cs.cmu.edu/anon/2022/CMU-CS-22-102.pdf)
 
 - [ ] [Julia Data Science](https://juliadatascience.io/)
+
+- [ ] [marceau coupechoux 5G ](https://marceaucoupechoux.wp.imt.fr/files/2021/05/newradio-v2.pdf)
