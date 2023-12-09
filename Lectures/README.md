@@ -36,3 +36,4 @@ N_0
 - [ ] [Julia Data Science](https://juliadatascience.io/)
 
 - [ ] [marceau coupechoux 5G ](https://marceaucoupechoux.wp.imt.fr/files/2021/05/newradio-v2.pdf)
+- [ ] [ how stuff works](http://howltestuffworks.blogspot.com/2019/10/5g-nr-synchronization-signalpbch-block.html)
