@@ -59,6 +59,8 @@ SDRangel
 [INFO] [B200] Actually got clock rate 61.440000 MHz.
 ```
 
+<img src=images/SDRangel-usrp-ws.png width='' height='' ></img>
+
 ##### WebAPI http://localhost:8091
 
 | | |
