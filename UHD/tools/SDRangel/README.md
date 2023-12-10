@@ -14,8 +14,10 @@ sudo port install SDRangel
 ```
 which SDRangel
 ```
+<pre>
 > /opt/local/bin/SDRangel
 > MainSettings::MainSettings: settings file: format: 0 location: ~/Library/Preferences/com.f4exb.SDRangel.plist
+</pre>
 
 # References
 
