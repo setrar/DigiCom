@@ -61,7 +61,7 @@ SDRangel
 
 - [ ] Create a workspace
 
-Loca
+Device Name: "serial": "type=b200,name=lab1_xcvr,serial=30C51C1,product=B200mini",
 
 | | | |
 |-|-|-|
