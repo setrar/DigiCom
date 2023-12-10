@@ -1,8 +1,18 @@
 # SDRangle
 
-- [ ] Using an UHD Device &#x1F4DF;
+### Using an UHD Device &#x1F4DF;
+
+- [ ] Add environment variables to locate the UHD images for FPGA Flashing
 
 ```zsh
+export UHD_HOME=/opt/local/share/uhd; \
+export UHD_IMAGES_DIR=$UHD_HOME/images
+```
+
+- [ ] Run SDRangel
+
+```
+SDRangel
 ```
 
 - [ ] 	&#x1F4E6; Install on Apple &#x1F34E;
