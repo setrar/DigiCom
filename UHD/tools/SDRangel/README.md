@@ -15,7 +15,11 @@ export UHD_IMAGES_DIR=$UHD_HOME/images
 SDRangel
 ```
 
-### WebAPI http://localhost:8091
+##### WebAPI http://localhost:8091
+
+| | |
+|-|-|
+| <img src=images/SDRangle-portal.png width='' height=''> </img> | <img src=images/SDRangle-swagger.png width='' height=''> </img> |
 
 ```
 curl -X GET "http://localhost:8091/sdrangel" -H  "accept: application/json" | jq '.'
