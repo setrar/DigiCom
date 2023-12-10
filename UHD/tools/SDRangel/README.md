@@ -63,9 +63,9 @@ SDRangel
 
 Loca
 
-| | |
-|-|-|
-| | <img src=images/SDRangle-uspr-ws.png width='' height='' ></img> |
+| | | |
+|-|-|-|
+| <img src=images/SDRangel-add-device.png width='' height='' ></img> | <img src=images/SDRangel-select-device.png width='' height='' ></img> | <img src=images/SDRangle-uspr-ws.png width='' height='' ></img> |
 
 ##### WebAPI http://localhost:8091
 
