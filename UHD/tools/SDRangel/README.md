@@ -1,6 +1,12 @@
 # SDRangle
 
 
+- [ ] Install on Apple &#x1F34E;
+
+```zsh
+sudo port install SDRangel
+```
+
 
 # References
 
