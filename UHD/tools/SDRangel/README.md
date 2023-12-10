@@ -1,12 +1,21 @@
 # SDRangle
 
+- [ ] Using an UHD Device &#x1F4DF;
 
-- [ ] Install on Apple &#x1F34E;
+```zsh
+```
+
+- [ ] 	&#x1F4E6; Install on Apple &#x1F34E;
 
 ```zsh
 sudo port install SDRangel
 ```
 
+```
+which SDRangel
+```
+> /opt/local/bin/SDRangel
+> MainSettings::MainSettings: settings file: format: 0 location: ~/Library/Preferences/com.f4exb.SDRangel.plist
 
 # References
 
