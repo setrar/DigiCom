@@ -2,6 +2,7 @@
 
 | Questions & Answers | 
 |-|
+| [when comparing time domain and frequency domain complex data how to tell the difference](#gpt-when-comparing-time-domain-and-frequency-domain-complex-data-how-to-tell-the-difference)| 
 | [what is a power spectral density?](#gpt-what-is-a-power-spectral-density) |
 | [what is the energy spectral density?](#gpt-what-is-the-energy-spectral-density-) |
 | [Find the power spectral density of?](#-find-the-power-spectral-density-of-) |
