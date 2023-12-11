@@ -16,3 +16,5 @@
 ```
 
 - [ ] [Algorithms for New Radio synchronization layer functions (CFO correction, PSS, SSS)](https://webthesis.biblio.polito.it/15907/1/tesi.pdf)
+- [ ] [As someone who has used and contributed to Julia, I find Yuri Vishnevsky's arguments about correctness totally fatal](https://news.ycombinator.com/item?id=33902437)
+- [ ] [Why I no longer recommend Julia](https://yuri.is/not-julia/)
