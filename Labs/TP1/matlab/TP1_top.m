@@ -5,7 +5,7 @@ pss
 
 
 % Read in sample file (example here)
-fd = fopen('usrp_samples.dat','r') ; 
+fd = fopen('data/usrp_samples.dat','r') ; 
 s = fread(fd,153600*2,'int16') ; 
 fclose(fd) ; 
 s2 = s(1:2:end) + sqrt(-1)*s(2:2:end) ; 
