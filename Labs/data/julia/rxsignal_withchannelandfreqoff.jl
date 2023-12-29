@@ -1,5 +1,5 @@
 using MAT
 
-ff = matopen("../matlab/rxsignal_withchannelandfreqoff.mat");
+ff = matopen("../data/matlab/rxsignal_withchannelandfreqoff.mat");
 
 @read ff rxs3;
