@@ -39,4 +39,5 @@ See Helium above
 - Hyperscale
 
 - [ ] [AWS to take on Microsoft Azure in private 5G](https://www.techtarget.com/searchnetworking/news/252510351/AWS-to-take-on-Microsoft-Azure-in-private-5G)
+- [ ] [Hyperscalers are killing the traditional telecom software model — that's not a bad thing](https://www.telecoms.com/oss-bss-cx/hyperscalers-are-killing-the-traditional-telecom-software-model-that-s-not-a-bad-thing)
 
