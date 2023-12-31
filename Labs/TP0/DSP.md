@@ -19,3 +19,28 @@ sequenceDiagram
   DigitalProcessing-->>InverseLaplace: Inverse Laplace Transform
   InverseLaplace-->>AnalogOutput: Analog Output
 ```
+
+```mermaid
+graph TD;
+    subgraph cluster_time_domain
+        tdSignal(Time Domain Signal)
+        A2D(Analog-to-Digital Converter)
+        dtSignal(Discrete-Time Signal)
+        ZT(Z-Transform)
+        DSPAlgorithms(DSP Algorithms)
+    end
+
+    subgraph cluster_frequency_domain
+        fdSignal(Frequency Domain Signal)
+        FourierT(Fourier Transform)
+        LT(Laplace Transform)
+        ZT2(Z-Transform)
+        DSPAlgorithms2(DSP Algorithms)
+    end
+
+    tdSignal --> A2D --> dtSignal --> ZT --> DSPAlgorithms
+    DSPAlgorithms --> fdSignal
+
+    fdSignal --> FourierT --> LT --> DSPAlgorithms2
+    dtSignal --> ZT2 --> DSPAlgorithms2
+```
