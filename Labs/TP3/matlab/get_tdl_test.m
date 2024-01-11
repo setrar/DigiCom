@@ -12,4 +12,6 @@ H = get_tdl(fs, SCS, PRBS, DS, chan_type);
 disp('Channel Impulse Response:')
 disp(H);
 
+plot(H)
+
 % You can now use the obtained channel response in your simulation or analysis.
