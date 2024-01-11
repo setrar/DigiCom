@@ -43,15 +43,17 @@ xu3 = exp(-1j * pi * utab(1 + uind3) * (0:838) .* (1:839) / 839);
 % This is not usually done in practice because of the complexity of the FFT (i.e. a large prime number)
 % There is a way to compute the Fourier transform directly and then perform the cyclic shift by a multiplication of a phasor in the frequency-domain.
 
-yuv1 = zeros(size(xu1));
-yuv2 = zeros(size(xu2));
-yuv3 = zeros(size(xu3));
+yuv1 = zeros(1, length(xu1));
+yuv2 = zeros(1, length(xu2));
+yuv3 = zeros(1, length(xu3));
 
 for n = 0:838
     xuv1(n + 1) = xu1(1 + rem(n + (Ncs * nuind1), 839));
     yuv1 = yuv1 + fft(xuv1);
+    
     xuv2(n + 1) = xu2(1 + rem(n + (Ncs * nuind2), 839));
     yuv2 = yuv2 + fft(xuv2);
+    
     xuv3(n + 1) = xu3(1 + rem(n + (Ncs * nuind3), 839));
     yuv3 = yuv3 + fft(xuv3);
 end
@@ -123,3 +125,31 @@ rxsig4_noiseandchannel = rxsig4_noiseandchannel + sqrt(0.5 / snr) * (randn(1, le
 % using the Zadoff-Chu sequences generation method as above
 % b) show how the data detection and time-delay estimation
 
+% Frequency-domain correlation for receiver
+
+% Ensure that the Zadoff-Chu sequences are of the same length as the received signal
+M = length(rxsig4_noiseandchannel);
+
+% Create the Zadoff-Chu sequences at the receiver using the same parameters
+zadoff_chu1 = exp(-1j * pi * utab(1 + uind1) * (0:(M-1)) .* (1:M) / M);
+zadoff_chu2 = exp(-1j * pi * utab(1 + uind2) * (0:(M-1)) .* (1:M) / M);
+zadoff_chu3 = exp(-1j * pi * utab(1 + uind3) * (0:(M-1)) .* (1:M) / M);
+
+% Perform frequency-domain correlation
+correlation_result1 = ifft(fft(rxsig4_noiseandchannel) .* conj(fft(zadoff_chu1)));
+correlation_result2 = ifft(fft(rxsig4_noiseandchannel) .* conj(fft(zadoff_chu2)));
+correlation_result3 = ifft(fft(rxsig4_noiseandchannel) .* conj(fft(zadoff_chu3)));
+
+% Display the correlation results
+figure;
+subplot(3, 1, 1);
+plot(abs(correlation_result1));
+title('Correlation Result for Zadoff-Chu Sequence 1');
+
+subplot(3, 1, 2);
+plot(abs(correlation_result2));
+title('Correlation Result for Zadoff-Chu Sequence 2');
+
+subplot(3, 1, 3);
+plot(abs(correlation_result3));
+title('Correlation Result for Zadoff-Chu Sequence 3');
