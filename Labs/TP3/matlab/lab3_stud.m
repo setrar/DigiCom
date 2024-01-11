@@ -85,6 +85,15 @@ xuv3_49152 = xuv3_49152 / sqrt(sum(abs(xuv3_49152).^2) / length(xuv3_49152));
 en3 = mean(abs(xuv3_49152).^2);
 
 % Plot the time-domain and frequency-domain waveform (xuv1)
+figure;
+subplot(2, 1, 1);
+plot(xu1)
+title('Time Domain Waveform');
+
+subplot(2, 1, 2);
+plot(xuv1_49152)
+title('Frequency Domain Waveform');
+
 % Question: What can you say regarding the frequency span (approximately how many PRBs does this waveform occupy
 % 
 % simulate time-delay
