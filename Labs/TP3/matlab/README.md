@@ -4,7 +4,7 @@
 >> lab3_stud
 ```
 
-<img src=TP2_Time-Freq_waveform.png width='' height='' > </img>
+<img src=images/TP3_Time-Freq_waveform.png width='' height='' > </img>
 
 <img src=images/TP3_xcorr-Zadoff-Chu.png width='' height='' > </img>
 
