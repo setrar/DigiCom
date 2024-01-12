@@ -49,13 +49,13 @@ yuv3 = zeros(1, length(xu3));
 
 for n = 0:838
     xuv1(n + 1) = xu1(1 + rem(n + (Ncs * nuind1), 839));
-    yuv1 = yuv1 + fft(xuv1);
+    yuv1 = yuv1 + fft(xuv1(n + 1));
     
     xuv2(n + 1) = xu2(1 + rem(n + (Ncs * nuind2), 839));
-    yuv2 = yuv2 + fft(xuv2);
+    yuv2 = yuv2 + fft(xuv2(n + 1));
     
     xuv3(n + 1) = xu3(1 + rem(n + (Ncs * nuind3), 839));
-    yuv3 = yuv3 + fft(xuv3);
+    yuv3 = yuv3 + fft(xuv3(n + 1));
 end
 
 % put the PRACH in the lowest frequency (positive) subcarriers starting at carrier 7
