@@ -13,6 +13,7 @@
 
 - [ ] [The Disappointment of 5G](https://circleid.com/posts/20230127-the-disappointment-of-5g)
 - [ ] [It's time for 5G to standalone](https://www.qualcomm.com/news/onq/2023/07/its-time-for-5g-to-standalone)
+- [ ] [5G Super Blueprint](https://wiki.lfnetworking.org/display/LN/5G+Super+Blueprint)
 
 # Jargons
 
