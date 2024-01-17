@@ -19,3 +19,9 @@ Channel Impulse Response:
   -0.1794 - 1.5471i
 ...
 ```
+
+<img src=images/IMG_0172.JPG width='' height='' > </img>
+<img src=images/IMG_0175.JPG width='' height='' > </img>
+<img src=images/IMG_0177.JPG width='' height='' > </img>
+<img src=images/IMG_0173.JPG width='' height='' > </img>
+<img src=images/IMG_0176.JPG width='' height='' > </img>
