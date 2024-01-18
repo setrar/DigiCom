@@ -75,3 +75,4 @@ if (coef_start == 2) % Ricean channel, so add the mean
   H=H+exp(-sqrt(-1)*2*pi*f*tdl(1,2)*DS).*sqrt(10.^(.1*tdl(1,3))).' / sqrt(tdl_norm);
 end
 
+  end
