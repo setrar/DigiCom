@@ -19,10 +19,13 @@ Device Address:
     name: B205i
     product: B205mini
     type: b200
+```
 
-
-valiha@ankarana UHD % $UHD_HOME/examples/gpio
-
+```
+$UHD_HOME/examples/gpio
+```
+> Returns
+```powershell
 Creating the usrp device with: ...
 [INFO] [UHD] Mac OS; Clang version 15.0.0 (clang-1500.0.40.1); Boost_107100; UHD_3.15.0.0-MacPorts-Release
 [INFO] [B200] Detected Device: B205mini
