@@ -311,6 +311,29 @@ Done!
         sudo port select --set python3 python311
 ```
 
+  ```
+  sudo port info uhd   
+  ```
+  > Returns:
+```powershell
+Password:
+uhd @3.15.0.0_7 (science, comms)
+Sub-ports:            uhd-39lts, uhd-devel
+Variants:             debug, [+]docs, [+]examples, [+]libusb, [+]manpages, [+]manual, python27, [+]python310,
+                      python35, python36, python37, python38, python39, [+]python_api, [+]test, universal
+
+Description:          USRP Hardware Driver for Ettus Research Products: Provides the release version, which is
+                      typically updated every month or so.
+Homepage:             https://kb.ettus.com/UHD
+
+Build Dependencies:   cmake, pkgconfig, doxygen
+Library Dependencies: ncurses, python310, py310-mako, py310-requests, py310-six, libusb, py310-docutils, gzip,
+                      py310-numpy, py310-pybind11, boost171
+Conflicts with:       uhd-devel, uhd-39lts
+Platforms:            darwin
+License:              GPL-3+
+Maintainers:          Email: michaelld@macports.org, GitHub: michaelld
+
 # References
 
 * MathWorks
