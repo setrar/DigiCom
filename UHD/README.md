@@ -333,6 +333,7 @@ Conflicts with:       uhd-devel, uhd-39lts
 Platforms:            darwin
 License:              GPL-3+
 Maintainers:          Email: michaelld@macports.org, GitHub: michaelld
+```
 
 # References
 
