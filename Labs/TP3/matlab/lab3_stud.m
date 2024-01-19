@@ -135,52 +135,8 @@ rxsig4_noiseandchannel = rxsig4_noiseandchannel + sqrt(.5/snr)*(randn(1,length(r
 
 ;
 
-end
-
 % What to do now
 % a) implement the receiver using a frequency-domain correlation
 % using the Zadoff-Chu sequences generation method as above
 % b) show how the data detection and time-delay estimation
 
-rxsig1_noprefix = rxsig1_justnoise(6636+(1:49152));
-rxsig2_noprefix = rxsig2_justnoise(6636+(1:49152));
-
-% rxsig1_noprefix = rxsig3_noiseandchannel(6636+(1:49152));
-% rxsig2_noprefix = rxsig4_noiseandchannel(6636+(1:49152));
-
-RXSIG1 = fft(rxsig1_noprefix);
-RXSIG2 = fft(rxsig2_noprefix);
-
-% correlation with preamble sequence with nu=0 for each sequence
-
-Xu=zeros(nseq,L);
-Ru1=zeros(nseq,L);
-Ru2=zeros(nseq,L);
-ru1=zeros(nseq,L);%1024;
-ru2=zeros(nseq,L);%1024;
-for (seq=1:nseq)
-    % compute time-domain ZC sequence for each u in 1:nseq
-    xun = exp(-j*pi*utab(seq)*(0:838).*(1:839)/839);
-    % compute freq-domain ZC sequence for each u in 1:nseq
-    Xu(seq,:) = fft(xun);
-    % correlate (componentwise multiplicaiton and IFFT) with received signal
-    Ru1(seq,:) = RXSIG1(7+(1:L)).*conj(Xu(seq,:));
-    Ru2(seq,:) = RXSIG2(7+(1:L)).*conj(Xu(seq,:));
-    ru1(seq,:) = ifft(Ru1(seq,:));%,1024);
-    ru2(seq,:) = ifft(Ru2(seq,:));%,1024);
-end
-
-figure(2)
-plot(20*log10(abs(fft(rxsig1_justnoise))))
-axis([1 1024 30 80])
-
-figure(3)
-plot(20*log10(abs(fft(rxsig1_justnoise))))
-axis([1 1024 30 80])
-
-
-figure(4)
-plot(0:838,20*log10(abs(ru1(1,:))), 'r',0:838,20*log10(abs(ru1(2,:))), 'b')
-
-figure(5)
-plot(0:838,20*log10(abs(ru2(1,:))), 'r',0:838,20*log10(abs(ru2(2,:))), 'b')
