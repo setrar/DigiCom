@@ -142,11 +142,11 @@ end
 % using the Zadoff-Chu sequences generation method as above
 % b) show how the data detection and time-delay estimation
 
-% rxsig1_noprefix = rxsig1_justnoise(6636+(1:49152));
-% rxsig2_noprefix = rxsig2_justnoise(6636+(1:49152));
+rxsig1_noprefix = rxsig1_justnoise(6636+(1:49152));
+rxsig2_noprefix = rxsig2_justnoise(6636+(1:49152));
 
-rxsig1_noprefix = rxsig3_noiseandchannel(6636+(1:49152));
-rxsig2_noprefix = rxsig4_noiseandchannel(6636+(1:49152));
+% rxsig1_noprefix = rxsig3_noiseandchannel(6636+(1:49152));
+% rxsig2_noprefix = rxsig4_noiseandchannel(6636+(1:49152));
 
 RXSIG1 = fft(rxsig1_noprefix);
 RXSIG2 = fft(rxsig2_noprefix);
@@ -171,11 +171,16 @@ for (seq=1:nseq)
 end
 
 figure(2)
-plot(20*log10(abs(fft(rxsig2_justnoise))))
+plot(20*log10(abs(fft(rxsig1_justnoise))))
 axis([1 1024 30 80])
 
 figure(3)
-plot(0:838,20*log10(abs(ru1(1,:))), 'r',0:838,20*log10(abs(ru1(2,:))), 'b')
+plot(20*log10(abs(fft(rxsig1_justnoise))))
+axis([1 1024 30 80])
+
 
 figure(4)
+plot(0:838,20*log10(abs(ru1(1,:))), 'r',0:838,20*log10(abs(ru1(2,:))), 'b')
+
+figure(5)
 plot(0:838,20*log10(abs(ru2(1,:))), 'r',0:838,20*log10(abs(ru2(2,:))), 'b')
