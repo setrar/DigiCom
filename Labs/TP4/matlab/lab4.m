@@ -25,27 +25,27 @@ for C=0:2047, % C is in the input c-sequence, C=[c0 c1 c2 ... c(K-1)]
          C11_3gpp(1+C,1+(symb*12)+(0:11)) = ones(1,12); 
          C11_3gpp_QPSK(1+C,1+(symb*12)+(0:11)) = ones(1,12); 
          symb=symb+1;
-      endif
+      end
 %      fprintf("symb %d,re %d\n",symb,re);
       C11_3gpp(1+C,1+(symb*12)+re) = cw(1+rem(idx,32)); % rate-matching of the cw-sequence
       C11_3gpp_QPSK(1+C,1+(symb*12)+re) = cw_QPSK(1+rem(idx,16)); % rate-matching of the cw-sequence
       idx=idx+1;
     end
-  end
+   end
 end
 
 % C is the code sequence to be generated
 C=77;
 c0_t=[];
 c0_t_QPSK=[];
-for (symb=0:13)
+for symb=0:13,
 % extract OFDM symbols "symb" from coded sequence and do the DFT-precoding (SC-FDMA in the lecture slides)
   if (symb==3) 
     symb=4;
-  endif
+  end
   if (symb==10)
     symb=11;
-  endif
+  end
   c0_f = fft(C11_3gpp(1+C,1+(symb*12) + (0:11)));
   c0_f_QPSK = fft(C11_3gpp_QPSK(1+C,1+(symb*12) + (0:11)));
   c0_t = [c0_t ifft(c0_f,2048)];
