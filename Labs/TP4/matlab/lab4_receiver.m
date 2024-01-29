@@ -68,7 +68,6 @@ axis('square')
 
 SNRdB = 3;
 SNR=10^(.1*SNRdB);
-% H = get_tdl(61.44e6,30e3,1,300e9,"tdlc");
-R = sqrt(SNR) * fft(C11_3gpp(1+C,:)) + randn(1,168) + sqrt(-1)*randn(1,168);
+R = sqrt(SNR) * C11_3gpp(1+C,:) + randn(1,168) + sqrt(-1)*randn(1,168);
 
 nc_corr = abs(R * C11_3gpp');
