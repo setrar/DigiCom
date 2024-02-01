@@ -98,45 +98,47 @@ SNR=0;
 snr=10.^(.1*SNR);
 noise1 = sqrt(.5/snr)*(randn(1,length(xuv1_49152))+sqrt(-1)*randn(1,length(xuv1_49152)));
 noise2 = sqrt(.5/snr)*(randn(1,length(xuv1_49152))+sqrt(-1)*randn(1,length(xuv1_49152)));
-rxsig1_justnoise = xuv1_49152 + noise1;
-rxsig2_justnoise = xuv1_49152 + xuv2_49152 + xuv3_49152 + noise2;
+rxsig1 = xuv1_49152 + noise1;
+rxsig2 = xuv1_49152 + xuv2_49152 + xuv3_49152 + noise2;
 
-% do TDL-C channel generation
-fs=61.44e6;
-SCS=30e3;
-DS=300e-9;
-
-H=get_tdl(fs,SCS,[0:105],DS,'tdlc');
-H2 = zeros(1,2048);
-halflength =53*12;
-H2((2048-(halflength-1)):2048) = H(1:halflength);
-H2(1:halflength) = H(halflength+(1:halflength));
-h1 = ifft(H2)*sqrt(2048);
-
-H=get_tdl(fs,SCS,[0:105],DS,'tdlc');
-H2 = zeros(1,2048);
-halflength =53*12;
-H2((2048-(halflength-1)):2048) = H(1:halflength);
-H2(1:halflength) = H(halflength+(1:halflength));
-h2 = ifft(H2)*sqrt(2048);
-
-H=get_tdl(fs,SCS,[0:105],DS,'tdlc');
-H2 = zeros(1,2048);
-halflength =53*12;
-H2((2048-(halflength-1)):2048) = H(1:halflength);
-H2(1:halflength) = H(halflength+(1:halflength));
-h3 = ifft(H2)*sqrt(2048);
-
-rxsig3_noiseandchannel = conv(h1,xuv1_49152);
-rxsig3_noiseandchannel = rxsig3_noiseandchannel + sqrt(.5/snr)*(randn(1,length(rxsig3_noiseandchannel))+sqrt(-1)*randn(1,length(rxsig3_noiseandchannel)));
-
-rxsig4_noiseandchannel = conv(h1,xuv1_49152) + conv(h2,xuv2_49152) + conv(h3,xuv3_49152);
-rxsig4_noiseandchannel = rxsig4_noiseandchannel + sqrt(.5/snr)*(randn(1,length(rxsig4_noiseandchannel))+sqrt(-1)*randn(1,length(rxsig4_noiseandchannel)));
-
-;
 
 % What to do now
 % a) implement the receiver using a frequency-domain correlation
 % using the Zadoff-Chu sequences generation method as above
 % b) show how the data detection and time-delay estimation
 
+% receiver
+
+rxsig1_noprefix = rxsig1(6336+(1:49152));
+rxsig2_noprefix = rxsig2(6336+(1:49152));
+
+RXSIG1 = fft(rxsig1_noprefix);
+RXSIG2 = fft(rxsig2_noprefix);
+
+Xu=zeros(nseq,839);
+Ru1=zeros(nseq,839);
+Ru2=zeros(nseq,839);
+ru1=zeros(nseq,839);
+ru2=zeros(nseq,839);
+for (seq=1:nseq)
+    % compute time-domain ZC sequence for each u in 1:nseq
+    xun = exp(-j*pi*utab(seq)*(0:838).*(1:839)/839);
+    % compute freq-domain ZC sequence for each u in 1:nseq
+    Xu(seq,:) = fft(xun);
+    % correlate (componentwise multiplicaiton and IFFT) with received signal
+    Ru1(seq,:) = RXSIG1(7+(1:839)).*conj(Xu(seq,:));
+    Ru2(seq,:) = RXSIG2(7+(1:839)).*conj(Xu(seq,:));
+    ru1(seq,:) = ifft(Ru1(seq,:));%,1024);
+    ru2(seq,:) = ifft(Ru2(seq,:));%,1024);
+end
+
+figure(1)
+plot(20*log10(abs(fft(rxsig1))))
+axis([1 1024 30 80])
+
+figure(2)
+plot(20*log10(abs(fft(rxsig2))))
+axis([1 1024 30 80])
+
+figure(3)
+plot(0:838,20*log10(abs(ru1(1,:))), 'r',0:838,20*log10(abs(ru1(2,:))), 'b')
