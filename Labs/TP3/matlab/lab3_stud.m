@@ -31,7 +31,7 @@ nuind2=rem(preamble_index2,nshifts)
 nuind3=rem(preamble_index3,nshifts)
 if (uind1>=length(utab) || uind2>=length(utab) || uind3>=length(utab)) 
   fprintf("ERROR tab length %d : %d %d %d",length(utab),uind1,uind1,uind3) 
-endif
+end
 
 % These are the Zadoff-Chu Sequence generators (time-domain) 
 % for the 3 transmitters
