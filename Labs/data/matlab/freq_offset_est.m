@@ -22,14 +22,11 @@ function [ f_offset ] = freq_offset_est(signal, pss_t, Nf)
   [A_fo, fo] = max(Y);
   fprintf('m %d, A_fo %d, fo %d \n',length(m),10 * log10(A_fo),fo);
 
-  % disp('Detected offset = 150Mhz',real(m2_chan));
-
-  % disp('Detected_offset = %dMhz',m(fo));
   fprintf('Detected_offset = %d Hz\n', m(fo));
 
   figure;
   subtitle('Frequency offset');
-  plot(m,10 * log10(abs(Y)),".")
+  plot(10 * log10(abs(Y)),".")
 
   % f_offset = Y
 
