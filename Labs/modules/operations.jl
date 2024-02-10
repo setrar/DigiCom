@@ -19,7 +19,7 @@ Base.:(*)(x, ::Conjugater) = conj.(x)
 
 # Hermitian postfix operation
 struct Hermitianer end
-const ᴴ = Hermitianer() #typed \^H
+const ꜛ = Hermitianer() #typed \^uparrow
 Base.:(*)(x, ::Hermitianer) = conj(transpose(x))
 
 # Convolution infix function
@@ -38,3 +38,6 @@ end
 ∑ = sum # Sum alias
 Fᴵ = ifft # Inverse Fourier Transform
 argmax = findmax # Alias used for MLE search 
+
+Re = real # Real Part Function to extract real number from Complex Number
+Im = imag # Imaginary Part Function to extract imaginary part from Complex Number
