@@ -36,7 +36,8 @@ end
 
 ⦰ = reverse # https://en.wikipedia.org/wiki/APL_syntax_and_symbols#Monadic_functions
 ∑ = sum # Sum alias
-Fᴵ = ifft # Inverse Fourier Transform
+𝓕 = fft # Fourier Transform types \bscrF
+𝓕⁻¹ = ifft # Inverse Fourier Transform types \bscrF\^-\^1
 argmax = findmax # Alias used for MLE search 
 
 Re = real # Real Part Function to extract real number from Complex Number
