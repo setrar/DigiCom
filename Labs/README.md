@@ -1,6 +1,15 @@
 # Labs
 
-# References
+- The report for `TP1` can be found by following the Jupyter Notebook &#x1F449; [`REPORT`](TP1/REPORT.ipynb).
+- The report for `TP2` can be found by following the Jupyter Notebook &#x1F449; [`REPORT`](TP2/REPORT.ipynb).
+- The report for `TP3` can be found by following the Jupyter Notebook &#x1F449; [`REPORT`](TP3/REPORT.ipynb).
+- The report for `TP4` can be found by following the Jupyter Notebook &#x1F449; [`REPORT`](TP4/REPORT.ipynb).
+
+
+- The data for all labs can be found at &#x1F449; [`data`](data).
+
+
+# &#x1F4DA; References
 
 - [ ] [StackExchangeCodes/SignalProcessing/Q52760/Linear Convolution Implementation with Overlap and Add and Overlap and Save.pdf](https://github.com/RoyiAvital/StackExchangeCodes/blob/master/SignalProcessing/Q52760/Linear%20Convolution%20Implementation%20with%20Overlap%20and%20Add%20and%20Overlap%20and%20Save.pdf)
 

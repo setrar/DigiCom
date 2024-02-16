@@ -104,3 +104,4 @@ Simple system
 - [ ] [The global telecom industry seeks growth in the face of rising demands.](https://www.pwc.com/gx/en/industries/tmt/telecom-outlook-perspectives.html)
 - [ ] [Myrthe Scheepers - ASMLs Julia Journey](https://www.youtube.com/watch?v=Nf70byblWEU)
 
+

@@ -1,10 +1,8 @@
-# 1 Receiver for NR Secondary Synchronization Signals (SSS)
 
+# TP2
 
+The report for `TP2` can be found by following the Jupyter Notebook &#x1F449; [`REPORT`](REPORT.ipynb).
 
-| x | PSS + PBCH | x | PBCH | x | SSS + PBCH | x | PBCH |
-|-|-|-|-|-|-|-|-|
-
-# References
+# &#x1F4DA; References
 
 - [ ] [The Cyclic Prefix for OFDM](https://dspillustrations.com/pages/posts/misc/the-cyclic-prefix-cp-in-ofdm.html)
