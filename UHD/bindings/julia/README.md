@@ -34,7 +34,7 @@ Precompiling project...
 ```
 
 ```
-julia setup.jl
+julia src/setup.jl
 ```
 > Returns:
 ```julia
@@ -75,7 +75,7 @@ export UHD_IMAGES_DIR=$UHD_HOME/images
 ```
 
 ```
-julia setup.jl
+julia src/setup.jl
 ```
 > Returns:
 ```julia
@@ -83,6 +83,42 @@ julia setup.jl
 [INFO] [B200] Loading firmware image: /opt/local/share/uhd/images/usrp_b200_fw.hex...
 [INFO] [B200] Detected Device: B200mini
 [INFO] [B200] Loading FPGA image: /opt/local/share/uhd/images/usrp_b200mini_fpga.bin...
+[INFO] [B200] Operating over USB 3.
+[INFO] [B200] Initialize CODEC control...
+[INFO] [B200] Initialize Radio control...
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Setting master clock rate selection to 'automatic'.
+[INFO] [B200] Asking for clock rate 16.000000 MHz... 
+[INFO] [B200] Actually got clock rate 16.000000 MHz.
+┌Rx Warning: Effective carrier frequency is 867.9999999999992 MHz and not 868.0 MHz
+┌Tx Warning: Effective carrier frequency is 867.9999999999992 MHz and not 868.0 MHz
+┌Rx: Current UHD Configuration in Rx mode
+| Carrier Frequency: 868.000 MHz
+| Sampling Frequency: 16.000 MHz
+└  Rx Gain: 30.00 dB
+┌Tx: Current UHD Configuration in Tx mode
+| Carrier Frequency: 868.000 MHz
+| Sampling Frequency: 16.000 MHz
+└  Tx Gain: 30.00 dB
+
+[ Info: USRP device is now closed.
+```
+
+```
+julia src/setup.jl
+```
+> Returns
+```julia
+The latest version of Julia in the `release` channel is 1.10.1+0.aarch64.apple.darwin14. You currently have `1.10.0+0.aarch64.apple.darwin14` installed. Run:
+
+  juliaup update
+
+to install Julia 1.10.1+0.aarch64.apple.darwin14 and update the `release` channel to that version.
+[INFO] [UHD] Mac OS; Clang version 12.0.0 (/home/mose/.julia/dev/BinaryBuilderBase/deps/downloads/llvm-project.git d28af7c654d8db0b68c175db5ce212d74fb5e9bc); Boost_107600; UHD_4.1.0.HEAD-0-g6bd0be9c
+[INFO] [B200] Loading firmware image: /opt/local/share/uhd/images/usrp_b200_fw.hex...
+[INFO] [B200] Detected Device: B205mini
+[INFO] [B200] Loading FPGA image: /opt/local/share/uhd/images/usrp_b205mini_fpga.bin...
 [INFO] [B200] Operating over USB 3.
 [INFO] [B200] Initialize CODEC control...
 [INFO] [B200] Initialize Radio control...
