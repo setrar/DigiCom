@@ -20,7 +20,6 @@ function main()
 	radio	= openUHD(carrierFreq,samplingRate,rxGain);
 	# --- Display the current radio configuration
 	# Both Tx and Rx sides.
-	print(radio);
 	# --- Getting a buffer from the radio 
 	sig	= recv(radio,nbSamples);
 	# This also can be done with pre-allocation 
@@ -29,7 +28,7 @@ function main()
 	# --- Release the radio ressources
 	close(radio); 
 	# --- Output to signal 
-        @printf "Hello %s" buffer
+        @printf "Hello %s" buffer[1:10]
 	return sig;
 end
 
