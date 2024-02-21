@@ -42,3 +42,6 @@ argmax = findmax # Alias used for MLE search
 
 Re = real # Real Part Function to extract real number from Complex Number
 Im = imag # Imaginary Part Function to extract imaginary part from Complex Number
+
+|  = abs
+|₂ = norm
