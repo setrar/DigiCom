@@ -9,7 +9,11 @@ $ uhd_find_devices
 [INFO] [B200] Loading firmware image: /opt/local/share/uhd/images/usrp_b200_fw.hex...
 ```
 
-- [ ] List
+#### &#x1F4D1; List
+
+- [ ] SN: 30C541D
+
+&#x1F4E1; 1
 
 ```
 --------------------------------------------------
