@@ -32,3 +32,14 @@ Device Address:
     product: B200mini
     type: b200
 ```
+
+```
+--------------------------------------------------
+-- UHD Device 0
+--------------------------------------------------
+Device Address:
+    serial: 30C523E
+    name: B200mini
+    product: B200mini
+    type: b200
+```
