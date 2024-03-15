@@ -1,4 +1,6 @@
 
+<img src=images/ME_subsection_members.png width='' height='' > </img>
+
 
 ```
 $ uhd_find_devices
