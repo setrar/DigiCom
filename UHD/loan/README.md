@@ -11,6 +11,32 @@ $ uhd_find_devices
 
 #### &#x1F4D1; List
 
+- [ ] SN: 30C51EE &#x1F4E1; &#x0031;&#xFE0F;&#x20E3; 
+
+```
+--------------------------------------------------
+-- UHD Device 0
+--------------------------------------------------
+Device Address:
+    serial: 30C51EE
+    name: B200mini
+    product: B200mini
+    type: b200
+```
+
+- [ ] SN: 30C542D &#x1F4E1; &#x0031;&#xFE0F;&#x20E3; 
+
+```
+--------------------------------------------------
+-- UHD Device 1
+--------------------------------------------------
+Device Address:
+    serial: 30C542D
+    name: B200mini
+    product: B200mini
+    type: b200
+```
+
 - [ ] SN: 30C525C &#x1F4E1; &#x0031;&#xFE0F;&#x20E3; 
 
 ```
